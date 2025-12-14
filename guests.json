@@ -1,0 +1,35 @@
+[
+  {
+    "username": "John Sprunt",
+    "displayName": "John and Steff",
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "giftChoice": null,
+    "paymentStatus": null
+  },
+  {
+    "username": "Alice Smith",
+    "displayName": "Alice",
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "giftChoice": null,
+    "paymentStatus": null
+  },
+  {
+    "username": "Bob Jones",
+    "displayName": "Bob and Mary Jones",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "giftChoice": null,
+    "paymentStatus": null
+  }
+]

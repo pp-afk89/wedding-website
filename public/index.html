@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rakel & Piers Wedding - April 2026</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="login-page" class="login-page">
+        <div class="login-container">
+            <h1>Rakel & Piers</h1>
+            <p class="wedding-text">are getting married!</p>
+            <p class="wedding-date">April 2026</p>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="guest-name">Please enter your full name</label>
+                    <input type="text" id="guest-name" placeholder="e.g. John Smith" required>
+                </div>
+                <button type="submit">View Invitation</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+            <a href="/wedding-admin-2026" class="admin-link">Admin</a>
+        </div>
+    </div>
+
+    <!-- Main Website (Hidden until login) -->
+    <div id="main-site" style="display: none;">
+        <!-- Navigation -->
+        <nav id="navbar">
+            <div class="nav-container">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#story" class="nav-link">Our Story</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#gifts" class="nav-link">Gifts</a>
+                <a href="#hotels" class="nav-link">Hotel Recommendations</a>
+            </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <p class="hero-subtitle">Rakel & Piers' Wedding</p>
+                <h1 id="welcome-message" class="welcome-message">Welcome, Guest!</h1>
+            </div>
+        </section>
+
+        <!-- Your Events Section (Personalized) -->
+        <section id="events" class="events-section">
+            <div class="container">
+                <h2>We look forward to seeing you at...</h2>
+                <div id="event-invitations" class="event-invitations">
+                    <!-- Events populated by JavaScript based on guest -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Story Section -->
+        <section id="story" class="story-section">
+            <div class="container">
+                <h2>Our Story</h2>
+                <div class="story-content">
+                    <p>Rakel and Piers met for the first time in Hackney, September 2022. They shared a bottle of Cava and made their way through a bougie tapas menu, before having a couple of Guinness at the Auld Shillelagh. It all went well, despite Rakel only having one working ear thanks to a popped eardrum (it definitely wasn't COVID, guys). Maybe that helped Piers' case. After more than 3 years together, their Hackney life hasn't changed much.</p>
+                    
+                    <p>They were engaged in July 2025 in Paris, the City of Love. Amidst a dreary few days, the clouds parted and the sun shone on Parc des Buttes-Chaumont for the (young) couple as Piers asked Rakel to spend the rest of her life with him. She said yes, although he had to re-confirm, to be sure his ears were working this time. They spent the rest of the day excitedly messaging all of you.</p>
+                    
+                    <p>The couple's wedding guests come from all over the world: Turkey, the UK, the US, Israel, Puerto Rico, and from across <em>the continent</em>. Close friends and family who have played important parts in each of their lives so far. In summer 2026, they'll be moving to Boston in the US, where a new chapter in their shared life begins. (Don't worry, Frazer's coming too!)</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Gallery Section -->
+        <section id="gallery" class="gallery-section">
+            <div class="container">
+                <h2>Gallery</h2>
+                <div class="gallery-grid">
+                    <img src="/images/gallery/photo1.jpg" alt="Rakel and Piers with friends celebrating engagement" onclick="openLightbox(0)">
+                    <img src="/images/gallery/photo2.jpg" alt="Rakel and Piers engagement photo" onclick="openLightbox(1)">
+                    <img src="/images/gallery/photo3.jpg" alt="Rakel and Piers dancing together" onclick="openLightbox(2)">
+                    <img src="/images/gallery/photo4.jpg" alt="Rakel and Piers intimate moment" onclick="openLightbox(3)">
+                    <img src="/images/gallery/photo5.jpg" alt="Rakel and Piers countryside selfie" onclick="openLightbox(4)">
+                    <img src="/images/gallery/photo6.jpg" alt="Rakel and Piers on a boat" onclick="openLightbox(5)">
+                    <img src="/images/gallery/photo7.jpg" alt="Rakel and Piers by the seaside" onclick="openLightbox(6)">
+                    <img src="/images/gallery/photo8.jpg" alt="Rakel and Piers at outdoor dinner" onclick="openLightbox(7)">
+                    <img src="/images/gallery/photo9.jpg" alt="Rakel and Piers sunset photo" onclick="openLightbox(8)">
+                </div>
+            </div>
+        </section>
+
+        <!-- Lightbox for Gallery -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <span class="lightbox-prev" onclick="changePhoto(-1)">&#10094;</span>
+            <span class="lightbox-next" onclick="changePhoto(1)">&#10095;</span>
+            <img id="lightbox-image" src="" alt="">
+            <div class="lightbox-counter">
+                <span id="lightbox-current">1</span> / <span id="lightbox-total">9</span>
+            </div>
+        </div>
+
+        <!-- Gifts Section -->
+        <section id="gifts" class="gifts-section">
+            <div class="container">
+                <h2>Gifts</h2>
+                <div class="gifts-content">
+                    <p>Your presence at our celebration is the greatest gift of all.</p>
+                    <p>However, if you would like to give a gift, we would be grateful for contributions towards:</p>
+                    
+                    <div class="gift-options">
+                        <div class="gift-option" data-gift="honeymoon">
+                            <h3>Our Honeymoon</h3>
+                            <p>Help us create unforgettable memories on our first adventure as a married couple.</p>
+                            <button onclick="selectGift('honeymoon')">Select</button>
+                        </div>
+                        <div class="gift-option" data-gift="home">
+                            <h3>Our New Boston Home</h3>
+                            <p>Contributions towards making our house in Boston feel like home.</p>
+                            <button onclick="selectGift('home')">Select</button>
+                        </div>
+                    </div>
+                    
+                    <div id="payment-link" class="payment-link" style="display: none;">
+                        <div class="payment-card">
+                            <h3>Our Monzo Payment Link</h3>
+                            <a href="https://monzo.me/rakelaroyotelyas?h=74GQkC" target="_blank" class="monzo-link" onclick="recordPaymentClick()">
+                                Pay via Monzo
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div id="gift-message" class="gift-message" style="display: none;"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Hotels Section -->
+        <section id="hotels" class="hotels-section">
+            <div class="container">
+                <h2>Travelling to London?</h2>
+                <div class="hotels-content">
+                    <p class="hotels-intro">Of course, stay wherever suits you best! But if you're looking for recommendations close to our venues, we'd suggest Shoreditch, Hoxton, or Hackney in East London:</p>
+                    
+                    <h3>Hotels</h3>
+                    <div class="hotel-list">
+                        <div class="hotel-item">
+                            <a href="https://www.google.com/maps/search/?api=1&query=The+Hoxton+Shoreditch+EC2A+3HU" target="_blank" class="hotel-link">
+                                <span class="hotel-name">The Hoxton, Shoreditch</span>
+                                <span class="hotel-postcode">EC2A 3HU</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hotel-item">
+                            <a href="https://www.google.com/maps/search/?api=1&query=artotel+London+Hoxton+EC2A+3HU" target="_blank" class="hotel-link">
+                                <span class="hotel-name">art'otel London Hoxton</span>
+                                <span class="hotel-postcode">EC2A 3HU</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hotel-item">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Mama+Shelter+Shoreditch+E2+8PP" target="_blank" class="hotel-link">
+                                <span class="hotel-name">Mama Shelter Shoreditch</span>
+                                <span class="hotel-postcode">E2 8PP</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hotel-item">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Point+A+Hotel+Shoreditch+EC2A+4JH" target="_blank" class="hotel-link">
+                                <span class="hotel-name">Point A Hotel Shoreditch</span>
+                                <span class="hotel-postcode">EC2A 4JH</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hotel-item">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Z+Hotel+Shoreditch+EC2A+3EJ" target="_blank" class="hotel-link">
+                                <span class="hotel-name">Z Hotel Shoreditch</span>
+                                <span class="hotel-postcode">EC2A 3EJ</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hotel-item">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Central+Hoxton+N1+6HD" target="_blank" class="hotel-link">
+                                <span class="hotel-name">Central Hoxton - self-catering apartments</span>
+                                <span class="hotel-postcode">N1 6HD</span>
+                            </a>
+                        </div>
+                        
+                        <div class="hotel-item">
+                            <a href="https://www.google.com/maps/search/?api=1&query=The+Shoreditch+Inn+EC2A+4BX" target="_blank" class="hotel-link">
+                                <span class="hotel-name">The Shoreditch Inn</span>
+                                <span class="hotel-postcode">EC2A 4BX</span>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="airbnb-section">
+                        <h3>Apartments & Airbnbs</h3>
+                        <p>We recommend looking for Airbnbs in the Shoreditch, Hoxton, or Hackney areas - you can experience the best of East London!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <p>&copy; 2026 Rakel & Piers' Wedding</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

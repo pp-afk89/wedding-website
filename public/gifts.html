@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gifts - Piers & [Partner]</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Piers & [Partner]</h1>
+        <p>April 17-18, 2026 | Hackney, London</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/story">Our Story</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/rsvp">RSVP</a></li>
+            <li><a href="/photos">Photos</a></li>
+            <li><a href="/gifts" class="active">Gifts</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>Gift Registry</h2>
+            <p style="text-align: center; margin-bottom: 3rem; font-style: italic;">
+                Your presence at our wedding is the greatest gift we could ask for. However, if you would like to contribute to our future together, we would be grateful for support towards:
+            </p>
+
+            <div class="gift-options">
+                <div class="gift-option" data-gift="honeymoon">
+                    <h3>Our Honeymoon</h3>
+                    <p style="margin: 1.5rem 0;">
+                        Help us create unforgettable memories as we embark on our first adventure as a married couple.
+                    </p>
+                    <button class="btn" onclick="selectGift('honeymoon')">Select This Option</button>
+                </div>
+
+                <div class="gift-option" data-gift="home">
+                    <h3>Our Boston Home</h3>
+                    <p style="margin: 1.5rem 0;">
+                        Contributions towards making our house in Boston feel like home as we start this new chapter together.
+                    </p>
+                    <button class="btn" onclick="selectGift('home')">Select This Option</button>
+                </div>
+            </div>
+
+            <div id="giftMessage" style="display: none; background-color: #e8f0ea; padding: 2rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
+                <p style="color: #5a7360; font-weight: 500; font-size: 1.1rem;">
+                    Thank you for your generosity! We'll be in touch with more details.
+                </p>
+            </div>
+
+            <div style="background-color: #f9f7f2; padding: 2rem; border-radius: 8px; margin-top: 3rem; text-align: center;">
+                <p>If you have any questions about our registry, please don't hesitate to reach out to us directly.</p>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Piers & [Partner]. All rights reserved.</p>
+    </footer>
+
+    <script src="/gifts.js"></script>
+</body>
+</html>

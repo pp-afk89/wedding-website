@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Admin Panel - Rakel & Piers</title>
+    <link rel="stylesheet" href="/admin/admin-styles.css">
+</head>
+<body>
+    <!-- Login Page -->
+    <div id="admin-login" class="admin-login">
+        <div class="login-card">
+            <h1>Admin Panel</h1>
+            <p class="subtitle">Rakel & Piers' Wedding</p>
+            <form id="admin-login-form">
+                <div class="form-group">
+                    <label for="admin-password">Password</label>
+                    <input type="password" id="admin-password" required autofocus>
+                </div>
+                <button type="submit">Login</button>
+                <p id="login-error" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Panel (Hidden until login) -->
+    <div id="admin-panel" style="display: none;">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-content">
+                <h1>Wedding Admin Panel</h1>
+                <div class="header-actions">
+                    <button onclick="exportToExcel()" class="btn-export">📥 Download Excel</button>
+                    <button onclick="logout()" class="btn-logout">Logout</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <div class="admin-container">
+            <!-- Add/Edit Guest Form -->
+            <div class="panel-section">
+                <h2 id="form-title">Add New Guest</h2>
+                <form id="guest-form" class="guest-form">
+                    <input type="hidden" id="edit-index" value="">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="username">Username *</label>
+                            <input type="text" id="username" placeholder="John Smith" required>
+                            <small>First and last name with space (e.g., John Smith)</small>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="displayName">Display Name *</label>
+                            <input type="text" id="displayName" placeholder="John and Mary Smith" required>
+                            <small>How they'll be greeted on the website</small>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Event Invitations *</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="ceremony" class="event-checkbox">
+                                <span>Ceremony at Hackney Town Hall</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="familyReception" class="event-checkbox">
+                                <span>Family Reception at Morito</span>
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="weddingCelebration" class="event-checkbox">
+                                <span>Wedding Celebration at Dükkan</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn-primary" id="save-btn">Add Guest</button>
+                        <button type="button" onclick="cancelEdit()" class="btn-secondary" id="cancel-btn" style="display: none;">Cancel</button>
+                    </div>
+                    
+                    <div id="form-message" class="form-message"></div>
+                </form>
+            </div>
+
+            <!-- Guest List -->
+            <div class="panel-section">
+                <!-- Dashboard Stats -->
+                <div class="dashboard-stats">
+                    <div class="stat-card">
+                        <div class="stat-number" id="total-guests">0</div>
+                        <div class="stat-label">Total Guests</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="ceremony-count">0</div>
+                        <div class="stat-label">Ceremony</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="reception-count">0</div>
+                        <div class="stat-label">Family Reception</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number" id="celebration-count">0</div>
+                        <div class="stat-label">Wedding Celebration</div>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <h2>Guest List (<span id="guest-count">0</span>)</h2>
+                    <input type="text" id="search-guests" placeholder="Search guests..." class="search-input">
+                </div>
+
+                <div class="table-container">
+                    <table class="guest-table">
+                        <thead>
+                            <tr>
+                                <th>Username</th>
+                                <th>Display Name</th>
+                                <th>Events</th>
+                                <th>Gift Selection</th>
+                                <th>Payment Status</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="guest-list">
+                            <!-- Populated by JavaScript -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/admin/admin-script.js"></script>
+</body>
+</html>

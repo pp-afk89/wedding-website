@@ -1,0 +1,913 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Garamond', 'Georgia', serif;
+    line-height: 1.6;
+    color: #2c2c2c;
+    scroll-behavior: smooth;
+    background: #faf8f5;
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ============================================
+   LOGIN PAGE
+   ============================================ */
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #faf8f5;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Login page background - centered, responsive table graphic (CROPPED, NO TEXT) */
+.login-page::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/save_the_date_graphic_only.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.08;
+    z-index: 0;
+}
+
+.login-container {
+    background: rgba(250, 248, 245, 0.95);
+    padding: 60px 50px;
+    border-radius: 8px;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.15);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    z-index: 1;
+}
+
+.login-container h1 {
+    font-size: 3rem;
+    color: #5a7360;
+    margin-bottom: 15px;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.login-container .wedding-text {
+    font-size: 1.4rem;
+    color: #5a7360;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.login-container .wedding-date {
+    font-size: 1.1rem;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.login-container .form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+.login-container label {
+    display: block;
+    color: #5a7360;
+    font-weight: 500;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 14px 15px;
+    border: 2px solid #d4cfc4;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.login-container input:focus {
+    outline: none;
+    border-color: #5a7360;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 16px;
+    background: #5a7360;
+    color: #faf8f5;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: inherit;
+    min-height: 50px; /* Mobile-friendly tap target */
+}
+
+.login-container button:hover {
+    background: #4a6350;
+}
+
+.error-message {
+    color: #c74141;
+    font-size: 0.9rem;
+    margin-top: 15px;
+    display: none;
+}
+
+.admin-link {
+    display: block;
+    margin-top: 30px;
+    text-align: center;
+    color: #999;
+    font-size: 0.75rem;
+    text-decoration: none;
+    opacity: 0.4;
+    transition: opacity 0.3s;
+}
+
+.admin-link:hover {
+    opacity: 0.8;
+}
+
+/* ============================================
+   NAVIGATION - MOBILE OPTIMIZED
+   ============================================ */
+
+#navbar {
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #e8e4dc;
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.nav-link {
+    color: #5a7360;
+    text-decoration: none;
+    padding: 12px 15px;
+    margin: 2px;
+    font-weight: 500;
+    transition: all 0.3s;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    min-height: 44px; /* Mobile tap target */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link:hover {
+    background: #f0ede6;
+    color: #3d4f43;
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+
+.hero {
+    min-height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(rgba(90, 115, 96, 0.75), rgba(90, 115, 96, 0.75)),
+                url('/images/save_the_date_graphic_only.png');
+    background-size: cover;
+    background-position: center 35%;
+    color: #faf8f5;
+    padding: 80px 20px;
+    position: relative;
+}
+
+.hero-content {
+    max-width: 800px;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    font-style: italic;
+    opacity: 0.95;
+}
+
+.welcome-message {
+    font-size: 3.5rem;
+    font-weight: 300;
+    letter-spacing: 3px;
+    margin-top: 10px;
+}
+
+/* ============================================
+   EVENTS SECTION
+   ============================================ */
+
+.events-section {
+    padding: 80px 20px;
+    background: #fff;
+    position: relative;
+}
+
+.events-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5a7360;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.event-invitations {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background: #f9f7f2;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-left: 5px solid #5a7360;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.event-card h3 {
+    color: #5a7360;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.event-card p {
+    margin: 10px 0;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.event-card strong {
+    color: #5a7360;
+    font-weight: 600;
+}
+
+/* ============================================
+   STORY SECTION
+   ============================================ */
+
+.story-section {
+    padding: 80px 20px;
+    background: #faf8f5;
+    position: relative;
+    overflow: hidden;
+}
+
+.story-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/save_the_date_graphic_only.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 0.06;
+    z-index: 0;
+}
+
+.story-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5a7360;
+    margin-bottom: 50px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+.story-content {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.9;
+    position: relative;
+    z-index: 1;
+}
+
+.story-content p {
+    margin-bottom: 25px;
+    font-size: 1.1rem;
+    color: #4a4a4a;
+    text-align: justify;
+}
+
+/* ============================================
+   GALLERY SECTION - MOBILE OPTIMIZED
+   ============================================ */
+
+.gallery-section {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.gallery-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5a7360;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.gallery-grid img:active {
+    transform: scale(0.98); /* Mobile tap feedback */
+}
+
+/* Lightbox - Mobile Optimized */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 4px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 300;
+    cursor: pointer;
+    transition: color 0.3s;
+    min-width: 44px;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-close:hover {
+    color: #d4cfc4;
+}
+
+.lightbox-prev,
+.lightbox-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 50px;
+    font-weight: 300;
+    cursor: pointer;
+    padding: 20px;
+    user-select: none;
+    transition: color 0.3s;
+    min-width: 50px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-prev:hover,
+.lightbox-next:hover {
+    color: #d4cfc4;
+}
+
+.lightbox-prev {
+    left: 20px;
+}
+
+.lightbox-next {
+    right: 20px;
+}
+
+.lightbox-counter {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+/* ============================================
+   GIFTS SECTION
+   ============================================ */
+
+.gifts-section {
+    padding: 80px 20px;
+    background: #faf8f5;
+    position: relative;
+    overflow: hidden;
+}
+
+.gifts-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/save_the_date_graphic_only.png');
+    background-size: cover;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    opacity: 0.06;
+    z-index: 0;
+}
+
+.gifts-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5a7360;
+    margin-bottom: 50px;
+    font-weight: 300;
+    position: relative;
+    z-index: 1;
+}
+
+.gifts-content {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.gifts-content > p {
+    font-size: 1.15rem;
+    margin-bottom: 20px;
+    color: #4a4a4a;
+}
+
+.gift-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.gift-option {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 40px 30px;
+    border-radius: 8px;
+    border: 3px solid #e8e4dc;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.gift-option:hover {
+    border-color: #5a7360;
+    box-shadow: 0 4px 15px rgba(90, 115, 96, 0.2);
+}
+
+.gift-option.selected {
+    border-color: #5a7360;
+    background: rgba(232, 240, 234, 0.95);
+}
+
+.gift-option h3 {
+    color: #5a7360;
+    font-size: 1.6rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.gift-option p {
+    margin-bottom: 25px;
+    line-height: 1.7;
+    color: #4a4a4a;
+}
+
+.gift-option button {
+    padding: 14px 35px;
+    background: #5a7360;
+    color: #faf8f5;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-family: inherit;
+    min-height: 48px; /* Mobile tap target */
+}
+
+.gift-option button:hover {
+    background: #4a6350;
+}
+
+.payment-link {
+    max-width: 500px;
+    margin: 40px auto 0;
+}
+
+.payment-card {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 30px;
+    border-radius: 8px;
+    border: 3px solid #5a7360;
+    box-shadow: 0 4px 15px rgba(90, 115, 96, 0.2);
+}
+
+.payment-card h3 {
+    color: #5a7360;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.monzo-link {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #5a7360;
+    color: #faf8f5;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+    font-weight: 500;
+    min-height: 50px; /* Mobile tap target */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.monzo-link:hover {
+    background: #4a6350;
+}
+
+.gift-message {
+    margin-top: 30px;
+    padding: 20px;
+    background: rgba(232, 240, 234, 0.95);
+    border-radius: 4px;
+    color: #5a7360;
+    font-weight: 500;
+}
+
+/* ============================================
+   HOTELS SECTION
+   ============================================ */
+
+.hotels-section {
+    padding: 80px 20px;
+    background: #fff;
+}
+
+.hotels-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    color: #5a7360;
+    margin-bottom: 30px;
+    font-weight: 300;
+}
+
+.hotels-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hotels-intro {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #4a4a4a;
+    text-align: center;
+}
+
+.hotels-content h3 {
+    color: #5a7360;
+    font-size: 1.8rem;
+    margin: 40px 0 25px 0;
+    font-weight: 400;
+}
+
+.hotel-list {
+    margin-bottom: 50px;
+}
+
+.hotel-item {
+    margin-bottom: 15px;
+}
+
+.hotel-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 25px;
+    background: #f9f7f2;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #2c2c2c;
+    transition: all 0.3s;
+    border-left: 4px solid #e8e4dc;
+    min-height: 60px; /* Mobile tap target */
+}
+
+.hotel-link:hover {
+    background: #f0ede6;
+    border-left-color: #5a7360;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+.hotel-link:active {
+    transform: scale(0.99); /* Mobile tap feedback */
+}
+
+.hotel-name {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #5a7360;
+    flex: 1;
+}
+
+.hotel-postcode {
+    font-size: 0.95rem;
+    color: #777;
+    font-family: 'Courier New', monospace;
+    margin-left: 15px;
+}
+
+.airbnb-section {
+    background: #f9f7f2;
+    padding: 35px;
+    border-radius: 8px;
+    margin-top: 40px;
+}
+
+.airbnb-section h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+.airbnb-section p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4a4a4a;
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+
+.footer {
+    background: #5a7360;
+    color: #faf8f5;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.footer p {
+    opacity: 0.9;
+}
+
+/* ============================================
+   MOBILE-FIRST RESPONSIVE DESIGN
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Login Page */
+    .login-container {
+        padding: 40px 30px;
+    }
+    
+    .login-container h1 {
+        font-size: 2.2rem;
+    }
+    
+    .login-container .wedding-text {
+        font-size: 1.2rem;
+    }
+    
+    /* Hero */
+    .welcome-message {
+        font-size: 2.2rem !important;
+        letter-spacing: 1px;
+    }
+    
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+    
+    /* Section Headings */
+    section h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    .hotels-content h3,
+    .airbnb-section h3 {
+        font-size: 1.4rem !important;
+    }
+    
+    /* Navigation - Stack vertically on mobile */
+    .nav-container {
+        flex-direction: column;
+        padding: 8px 10px;
+    }
+    
+    .nav-link {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+    
+    /* Gallery - 2 columns on mobile */
+    .gallery-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .gallery-grid img {
+        height: 180px;
+    }
+    
+    /* Lightbox - Mobile friendly */
+    .lightbox img {
+        max-width: 95%;
+        max-height: 80vh;
+    }
+    
+    .lightbox-close {
+        top: 10px;
+        right: 15px;
+        font-size: 35px;
+    }
+    
+    .lightbox-prev,
+    .lightbox-next {
+        font-size: 35px;
+        padding: 15px;
+    }
+    
+    .lightbox-prev {
+        left: 5px;
+    }
+    
+    .lightbox-next {
+        right: 5px;
+    }
+    
+    .lightbox-counter {
+        bottom: 15px;
+        font-size: 1rem;
+    }
+    
+    /* Event Cards */
+    .event-card {
+        padding: 25px 20px;
+    }
+    
+    .event-card h3 {
+        font-size: 1.4rem;
+    }
+    
+    .event-card p {
+        font-size: 1rem;
+    }
+    
+    /* Gifts - Stack on mobile */
+    .gift-options {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .gift-option {
+        padding: 30px 25px;
+    }
+    
+    /* Hotels - Better mobile layout */
+    .hotel-link {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 16px 20px;
+    }
+    
+    .hotel-name {
+        margin-bottom: 8px;
+        font-size: 1.05rem;
+    }
+    
+    .hotel-postcode {
+        margin-left: 0;
+        font-size: 0.9rem;
+    }
+    
+    /* Story */
+    .story-content p {
+        font-size: 1.05rem;
+    }
+    
+    /* Padding adjustments */
+    section {
+        padding: 60px 20px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    .gallery-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .gallery-grid img {
+        height: 250px;
+    }
+    
+    .login-container {
+        padding: 35px 25px;
+    }
+    
+    .welcome-message {
+        font-size: 1.8rem !important;
+    }
+}
+
+/* Larger screens */
+@media (min-width: 1400px) {
+    .hero {
+        background-size: 100% auto;
+    }
+    
+    .story-section::before,
+    .gifts-section::before {
+        background-size: 100% auto;
+    }
+}

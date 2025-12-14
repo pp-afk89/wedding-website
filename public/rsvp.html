@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RSVP - Piers & [Partner]</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Piers & [Partner]</h1>
+        <p>April 17-18, 2026 | Hackney, London</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/story">Our Story</a></li>
+            <li><a href="/events">Events</a></li>
+            <li><a href="/rsvp" class="active">RSVP</a></li>
+            <li><a href="/photos">Photos</a></li>
+            <li><a href="/gifts">Gifts</a></li>
+            <li><a href="/logout">Logout</a></li>
+        </ul>
+    </nav>
+
+    <div class="container">
+        <section>
+            <h2>RSVP</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">
+                Please let us know if you can join us for the events you're invited to
+            </p>
+
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required readonly>
+                </div>
+
+                <div class="form-group">
+                    <label>Events You're Invited To</label>
+                    <div class="checkbox-group" id="eventCheckboxes">
+                        <!-- Will be populated by JavaScript based on guest data -->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="attending">Will you be attending?</label>
+                    <select id="attending" name="attending" required>
+                        <option value="">Please select...</option>
+                        <option value="yes">Yes, I'll be there!</option>
+                        <option value="no">Sorry, I can't make it</option>
+                    </select>
+                </div>
+
+                <div class="form-group" id="guestCountGroup" style="display: none;">
+                    <label for="guestCount">Number of Guests (including yourself)</label>
+                    <input type="number" id="guestCount" name="guestCount" min="1" value="1">
+                </div>
+
+                <div class="form-group">
+                    <label for="dietary">Dietary Requirements or Allergies</label>
+                    <textarea id="dietary" name="dietary" placeholder="Please let us know of any dietary requirements, allergies, or special needs"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message for the Happy Couple (Optional)</label>
+                    <textarea id="message" name="message" placeholder="We'd love to hear from you!"></textarea>
+                </div>
+
+                <button type="submit">Submit RSVP</button>
+                
+                <div id="successMessage" style="display: none; background-color: #e8f0ea; padding: 1rem; border-radius: 4px; margin-top: 1rem; text-align: center;">
+                    <p style="color: #5a7360; font-weight: 500;">Thank you! Your RSVP has been submitted.</p>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Piers & [Partner]. All rights reserved.</p>
+    </footer>
+
+    <script src="/rsvp.js"></script>
+</body>
+</html>
