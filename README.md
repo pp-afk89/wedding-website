@@ -1,399 +1,170 @@
-# Wedding Website with Admin Panel
-## Rakel & Piers - April 2026
+# Wedding Website V7 - Complete Package 🎉
 
-Complete wedding website with powerful admin panel for easy guest management.
+## ✨ What's New in V7
 
----
+### 1. 📱 Mobile Navigation (Hamburger Menu)
+- Hamburger menu (☰) appears on mobile devices
+- Clean, space-saving design
+- Auto-closes after navigation
+- Horizontal menu remains on desktop
 
-## 🎉 What's New - Admin Panel Edition
+### 2. 📸 Photo Carousel
+- Gallery displays 1 photo at a time
+- Left/right arrow navigation
+- Swipe gestures on mobile devices
+- Photo counter (1/10, 2/10, etc.)
+- 10 photos total (includes your new photobooth image!)
 
-### ✨ Admin Panel Features
-
-**Password-Protected Admin Interface**
-- URL: `http://localhost:3000/wedding-admin-2026`
-- Password: `ar0y092`
-- Desktop-optimized interface
-- Wedding aesthetic design
-
-**Dashboard Statistics**
-- Total guest count
-- Ceremony attendee count
-- Family Reception attendee count
-- Wedding Celebration attendee count
-- Updates automatically as you add/edit guests
-
-**Guest Management**
-- ✅ Add new guests (auto-saves immediately)
-- ✅ Edit existing guests (auto-saves on form)
-- ✅ Delete guests (with confirmation)
-- ✅ Search/filter guests
-- ✅ View gift selections and payment status
-
-**Data Storage**
-- 📁 **JSON Database** (`guests.json`)
-- No Excel vulnerabilities
-- Fast and reliable
-- Easy to backup
-
-**Excel Export**
-- 📥 Download current guest list as Excel
-- Perfect for offline use on wedding day
-- Includes all guest data + gift selections
-- Formatted and ready to print
+### 3. 🍽️ Dietary Requirements System
+- "Dietary Requirements" button on Family Reception card
+- Professional popup modal for guest input
+- Saves directly to database
+- Admin panel shows red ⚠️ indicator for guests with requirements
+- Click ⚠️ to view specific requirements
+- "Download Dietary Requirements" button → exports PDF
 
 ---
 
-## 🚀 Quick Start
+## 📁 Files Included
 
-### Installation
-
-```bash
-cd wedding-website-v6-admin
-npm install
-npm start
+```
+wedding-website-v7/
+├── server.js                      # Backend server with all APIs
+├── package.json                   # Dependencies (Express + PDFKit)
+├── guests.json                    # Guest database (YOU NEED TO ADD THIS)
+├── public/
+│   ├── index.html                 # Main website (YOU NEED TO ADD THIS)
+│   ├── styles.css                 # ✅ Complete CSS with hamburger + carousel
+│   ├── script.js                  # ✅ Complete JavaScript with all functionality
+│   ├── images/
+│   │   ├── save_the_date_graphic_only.png
+│   │   └── gallery/
+│   │       ├── photo1.jpg
+│   │       ├── photo2.jpg
+│   │       ├── ...
+│   │       └── photo10.jpg        # Your new photobooth image
+│   └── admin/
+│       ├── index.html             # ✅ Admin panel with dietary column
+│       └── admin-script.js        # ✅ Admin JS with PDF export
 ```
 
-### Access
-
-- **Main Website**: http://localhost:3000
-- **Admin Panel**: http://localhost:3000/wedding-admin-2026
-- **Admin Password**: ar0y092
-
 ---
 
-## 👥 Managing Guests
+## 🚀 What You Still Need
 
-### Adding a New Guest
+### 1. **index.html** (Main Website)
+I need to create this file with:
+- Hamburger menu structure
+- Carousel HTML structure
+- Dietary requirements modal
+- All your existing sections
 
-1. Go to admin panel: `/wedding-admin-2026`
-2. Login with password: `ar0y092`
-3. Fill in the form:
-   - **Username**: `First Last` (with space, e.g., "John Smith")
-   - **Display Name**: How they'll be greeted (e.g., "John and Mary")
-   - **Events**: Check boxes for invited events
-4. Click "Add Guest"
-5. **Automatically saved!** Guest immediately available on website
-
-### Editing a Guest
-
-1. Find guest in the list
-2. Click "Edit" button
-3. Form auto-fills with their data
-4. Make changes
-5. Click "Update Guest"
-6. **Automatically saved!** Changes live immediately
-
-### Deleting a Guest
-
-1. Find guest in the list
-2. Click "Delete" button
-3. Confirm deletion
-4. Guest removed from database
-
-### Searching Guests
-
-- Use search box to filter by name or username
-- Real-time filtering as you type
-
----
-
-## 📊 Gift Tracking
-
-### How It Works
-
-**When a guest selects a gift:**
-1. Gift choice appears in admin panel
-2. Shows: "Our Honeymoon" or "Our New Boston Home"
-
-**When they click payment link:**
-1. Payment status updates to "✓ Clicked"
-2. Timestamp recorded in database
-
-### Viewing Gift Data
-
-Admin panel shows three columns for each guest:
-- **Gift Selection**: What they chose
-- **Payment Status**: Whether they clicked payment link
-- **Timestamp**: When action occurred (in database)
-
----
-
-## 📥 Exporting to Excel
-
-### Download Guest List
-
-1. Click "📥 Download Excel" button in admin header
-2. File downloads automatically
-3. Filename: `Wedding_Guests_YYYY-MM-DD.xlsx`
-
-### Excel Contents
-
-**Columns:**
-- Username
-- Display Name  
-- Ceremony (X if invited)
-- Family Reception (X if invited)
-- Wedding Celebration (X if invited)
-- Gift Choice
-- Payment Status
-
-**Formatting:**
-- Header row: Green background (#5a7360)
-- Event columns: Centered
-- Ready to print or email
-
----
-
-## 💾 Database Structure
-
-### JSON Format
-
+### 2. **guests.json** 
+Make sure this includes the `dietaryRequirements` field:
 ```json
 [
   {
-    "username": "John Smith",
-    "displayName": "John and Mary Smith",
+    "username": "john smith",
+    "displayName": "John Smith",
     "events": {
       "ceremony": true,
-      "familyReception": true,
-      "weddingCelebration": false
+      "reception": true,
+      "celebration": true
     },
-    "giftChoice": "Our Honeymoon",
-    "paymentStatus": "Payment Link Clicked"
+    "giftSelection": "",
+    "dietaryRequirements": ""
   }
 ]
 ```
 
-### File Location
-
-`guests.json` in root directory
-
-### Backup
-
-Simply copy `guests.json` to backup your data!
+### 3. **Images**
+- Your 10 gallery photos (photo1.jpg through photo10.jpg)
+- save_the_date_graphic_only.png
 
 ---
 
-## 🌐 Deployment
+## 📝 Key Changes Summary
 
-### Compatible Hosting
+### CSS (`styles.css`)
+- Added hamburger menu styles (mobile only)
+- Added carousel styles with navigation buttons
+- Added dietary modal styles
+- Improved mobile responsiveness
 
-**Works on any platform with Node.js:**
-- ✅ Heroku
-- ✅ Railway
-- ✅ DigitalOcean App Platform
-- ✅ AWS/Azure/Google Cloud
-- ✅ Any VPS
+### JavaScript (`script.js`)
+- Hamburger menu toggle functionality
+- Full carousel implementation with:
+  - Arrow navigation
+  - Swipe gestures
+  - Keyboard controls
+  - Photo counter
+- Dietary requirements modal
+- API integration for saving dietary data
 
-### Deployment Steps
+### Server (`server.js`)
+- `/api/dietary` - POST endpoint to save dietary requirements
+- `/api/dietary/export-pdf` - GET endpoint for PDF download
+- PDFKit integration for professional PDF generation
 
-1. **Choose platform** (recommend Heroku or Railway)
-2. **Push code** to platform
-3. **Set environment variables** (if needed)
-4. **Deploy!**
-
-### Important Files
-
-Make sure these are included:
-- `guests.json` - Guest database
-- `server.js` - Backend
-- `package.json` - Dependencies
-- `public/` - All frontend files
-
----
-
-## 🔐 Security
-
-### Admin Access
-
-- **Password**: `ar0y092`
-- **Session-based**: Stays logged in until browser close
-- **Hidden URL**: `/wedding-admin-2026` (not obvious)
-
-### For Production
-
-Consider adding:
-1. **Environment variable** for password
-2. **HTTPS only** enforcement
-3. **Rate limiting** on admin routes
-4. **IP whitelist** (optional)
+### Admin Panel
+- New "Dietary" column with ⚠️ indicators
+- Click indicator to view requirements in popup
+- "Download Dietary Requirements" button
+- Exports PDF with Name | Requirements table
 
 ---
 
-## 📱 Website Features
+## 🔧 How to Deploy
 
-All previous features maintained:
-
-**Guest Experience:**
-- Personalized login
-- Custom event invitations
-- Photo gallery with lightbox
-- Gift selection
-- Hotel recommendations
-
-**Mobile Optimized:**
-- Responsive design
-- Touch-friendly
-- Fast loading
-
----
-
-## 🎨 Customization
-
-### Change Admin Password
-
-Edit `public/admin/admin-script.js` line 2:
-```javascript
-const ADMIN_PASSWORD = 'your-new-password';
+### Option 1: Local Testing
+```bash
+cd wedding-website-v7
+npm install
+npm start
+# Visit http://localhost:3000
+# Admin: http://localhost:3000/wedding-admin-2026
 ```
 
-### Change Admin URL
-
-Edit `server.js` line 47:
-```javascript
-app.get('/your-custom-url', (req, res) => {
-```
-
-And update in README!
-
-### Add More Event Types
-
-1. Update `guests.json` structure
-2. Update admin form (add checkbox)
-3. Update guest display logic
+### Option 2: Railway Deployment
+1. Push all files to GitHub
+2. Railway will auto-detect and deploy
+3. Make sure Railway uses: `npm start`
 
 ---
 
-## 🔧 Troubleshooting
+## ✅ Testing Checklist
 
-### Can't Login to Admin
-
-- Check password: `ar0y092`
-- Try clearing browser cache
-- Check browser console for errors
-
-### Changes Not Saving
-
-- Check server console for errors
-- Verify `guests.json` file permissions
-- Restart server
-
-### Guest Can't Login
-
-- Verify username format: `firstname.lastname`
-- Check guest exists in database
-- Try admin panel to confirm guest data
-
-### Excel Export Not Working
-
-- Check `exceljs` is installed: `npm install`
-- Verify server has write permissions
-- Check browser console for errors
+- [ ] Mobile hamburger menu opens/closes
+- [ ] Photo carousel arrows work
+- [ ] Photo carousel swipe works on mobile
+- [ ] Dietary requirements button appears on Reception card
+- [ ] Dietary modal opens, saves, and closes
+- [ ] Admin panel shows ⚠️ for dietary requirements
+- [ ] Clicking ⚠️ shows dietary details
+- [ ] PDF download includes all dietary requirements
+- [ ] Excel export includes dietary column
 
 ---
 
-## 📂 File Structure
+## 🎨 Design Notes
 
-```
-wedding-website-v6-admin/
-├── public/
-│   ├── admin/
-│   │   ├── index.html (Admin panel)
-│   │   ├── admin-styles.css
-│   │   └── admin-script.js
-│   ├── images/
-│   │   ├── save_the_date_graphic_only.png
-│   │   └── gallery/ (9 photos)
-│   ├── index.html (Main website)
-│   ├── styles.css
-│   └── script.js
-├── server.js (Backend + API)
-├── guests.json (Database)
-├── package.json
-└── README.md
-```
+- Green color scheme maintained (#5a7360)
+- Professional modal styling
+- Mobile-first responsive design
+- Smooth animations and transitions
+- Watermark backgrounds preserved
 
 ---
 
-## 🎯 Admin Panel Workflow
+## 🔐 Admin Access
 
-### Typical Usage
-
-**Before Wedding:**
-1. Add all guests via admin panel
-2. Guests can login and see their invitations
-3. Monitor gift selections as they come in
-4. Export to Excel periodically for backup
-
-**Day Before Wedding:**
-1. Export final guest list to Excel
-2. Print for registration table
-3. Check final gift/payment counts
-
-**After Wedding:**
-1. Export final data for records
-2. Backup `guests.json` file
+**URL:** `https://your-site.com/wedding-admin-2026`  
+**Password:** `ar0y092`
 
 ---
 
-## 💡 Tips
+## 📞 Support
 
-### Best Practices
+If anything doesn't work as expected, just let me know and I'll fix it immediately!
 
-1. **Regular Backups**: Copy `guests.json` weekly
-2. **Test Before Launch**: Add test guests, verify everything works
-3. **Mobile Check**: Test admin panel on tablet/phone
-4. **Excel Exports**: Download backups before major changes
-
-### Common Workflows
-
-**Adding Multiple Guests:**
-- Form stays open after adding
-- Quick to add many guests in succession
-- Auto-saves each one
-
-**Bulk Editing:**
-- Can quickly edit multiple guests
-- Search to filter, edit one by one
-- Changes save immediately
-
----
-
-## ❓ FAQ
-
-**Q: Can I import guests from Excel?**
-A: Currently manual entry. You can edit `guests.json` directly (JSON format) for bulk import.
-
-**Q: What happens if two people try to edit simultaneously?**
-A: Last save wins. For wedding size, this is unlikely to be an issue.
-
-**Q: Can I change guest usernames after creating them?**
-A: Not recommended. Better to delete and re-add. Gift data will be lost.
-
-**Q: How do I reset all data?**
-A: Delete or empty `guests.json`, restart server.
-
-**Q: Can I add custom fields?**
-A: Yes! Edit database structure, update admin form, update display logic.
-
----
-
-## 📄 License
-
-Personal use for Rakel & Piers' wedding, April 2026.
-
----
-
-## ✨ Summary
-
-**You now have:**
-- ✅ Full wedding website
-- ✅ Powerful admin panel
-- ✅ JSON database (no vulnerabilities)
-- ✅ Excel export capability
-- ✅ Real-time gift tracking
-- ✅ Auto-save functionality
-- ✅ Mobile-optimized
-- ✅ Production-ready
-
-**Ready to deploy!** Tomorrow we'll get this online! 🚀
+**Next Step:** I need to create your `index.html` file with all the structural changes.
