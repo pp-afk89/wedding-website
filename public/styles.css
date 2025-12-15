@@ -163,6 +163,7 @@ body {
     top: 0;
     z-index: 100;
     border-bottom: 1px solid #e8e4dc;
+    padding: 15px 20px;
 }
 
 .nav-container {
@@ -170,7 +171,7 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    padding: 10px 15px;
+    padding: 0;
     flex-wrap: wrap;
     gap: 5px;
 }
@@ -282,6 +283,38 @@ body {
 .event-card strong {
     color: #5a7360;
     font-weight: 600;
+}
+
+/* Download Event Details Button */
+.download-section {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #e8e4dc;
+}
+
+.download-pdf-btn {
+    padding: 15px 35px;
+    background-color: #5a7360;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 2px 8px rgba(90, 115, 96, 0.2);
+    letter-spacing: 0.5px;
+}
+
+.download-pdf-btn:hover {
+    background-color: #4a6350;
+    box-shadow: 0 4px 12px rgba(90, 115, 96, 0.3);
+    transform: translateY(-2px);
+}
+
+.download-pdf-btn:active {
+    transform: translateY(0);
 }
 
 /* ============================================
@@ -1109,25 +1142,33 @@ body {
 
 /* Mobile Responsive Updates */
 @media (max-width: 768px) {
-    /* Show hamburger, hide nav on mobile */
+    /* Navbar becomes relative container */
+    #navbar {
+        position: relative;
+        padding: 15px 60px 15px 20px; /* Extra padding for hamburger */
+    }
+    
+    /* Show hamburger, positioned in navbar */
     .hamburger {
         display: block;
         position: absolute;
         right: 20px;
-        top: 20px;
+        top: 50%;
+        transform: translateY(-50%);
     }
     
     .nav-container {
-        position: fixed;
-        top: 60px;
+        position: absolute;
+        top: 100%;
         left: 0;
         width: 100%;
-        background-color: #5a7360;
+        background-color: rgba(90, 115, 96, 0.98);
         flex-direction: column;
         max-height: 0;
         overflow: hidden;
         transition: max-height 0.3s ease-out;
         z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
     
     .nav-container.active {
@@ -1139,6 +1180,11 @@ body {
         text-align: center;
         padding: 15px;
         border-bottom: 1px solid rgba(255,255,255,0.1);
+        color: white;
+    }
+    
+    .nav-container .nav-link:hover {
+        background-color: rgba(90, 115, 96, 0.9);
     }
     
     /* Carousel mobile adjustments */

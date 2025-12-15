@@ -415,3 +415,48 @@ document.getElementById('lightbox').addEventListener('click', function(e) {
         closeLightbox();
     }
 });
+
+// ============================================
+// DOWNLOAD EVENT DETAILS PDF
+// ============================================
+
+async function downloadEventPDF() {
+    if (!currentGuest) {
+        alert('Error: Not logged in');
+        return;
+    }
+    
+    try {
+        const response = await fetch('/api/guest-event-pdf', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: currentGuest.username
+            })
+        });
+        
+        if (!response.ok) {
+            throw new Error('PDF generation failed');
+        }
+        
+        // Get the PDF blob
+        const blob = await response.blob();
+        
+        // Create download link
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Wedding_Details_${currentGuest.displayName.replace(/\s+/g, '_')}.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+        
+    } catch (error) {
+        console.error('Error downloading PDF:', error);
+        alert('Error downloading event details. Please try again.');
+    }
+}
+

@@ -371,6 +371,154 @@ app.get('/api/dietary/export-pdf', async (req, res) => {
     }
 });
 
+// Export guest event details as PDF
+app.post('/api/guest-event-pdf', async (req, res) => {
+    try {
+        const PDFDocument = require('pdfkit');
+        const { username } = req.body;
+        
+        const guests = await readGuests();
+        const guest = guests.find(g => g.username === username);
+        
+        if (!guest) {
+            return res.status(404).json({ error: 'Guest not found' });
+        }
+        
+        // Event details
+        const eventDetails = {
+            ceremony: {
+                title: 'The Ceremony at Hackney Town Hall',
+                date: 'Friday, 17th April 2026',
+                arrival: '2:15 PM, the ceremony will begin at 2:30 PM',
+                location: 'Hackney Town Hall, Mare Street, London E8 1EA',
+                dressCode: 'Semi-formal: suit/tie or a nice dress!'
+            },
+            familyReception: {
+                title: 'The Family Reception at Morito',
+                date: 'Friday, 17th April 2026',
+                arrival: '5 PM for cocktail hour, followed by a short inter-faith ceremony',
+                extra: 'Wedding Breakfast: 7 PM, followed by a little dance!',
+                location: 'Morito (restaurant), 195 Hackney Rd, London E2 8JL',
+                dressCode: 'Semi-formal: suit/tie or a nice dress!'
+            },
+            weddingCelebration: {
+                title: 'Wedding Celebration at Dükkan',
+                date: 'Saturday, 18th April 2026',
+                arrival: 'Rakel says 6:30 PM prompt, Piers says "Come whenever!"',
+                location: 'Dükkan, 227-229 Hoxton St, London N1 5LG',
+                dressCode: 'Chic Party Attire - Bold colours, sparkles and suits, please!'
+            }
+        };
+        
+        // Create PDF
+        const doc = new PDFDocument({ 
+            size: 'A4',
+            margin: 50
+        });
+        
+        // Set response headers
+        res.setHeader('Content-Type', 'application/pdf');
+        res.setHeader('Content-Disposition', `attachment; filename="Wedding_Details_${guest.displayName.replace(/\s+/g, '_')}.pdf"`);
+        
+        // Pipe PDF to response
+        doc.pipe(res);
+        
+        // Add watermark background (full page, faded)
+        const imagePath = path.join(__dirname, 'public', 'images', 'save_the_date_graphic_only.png');
+        if (fsSync.existsSync(imagePath)) {
+            doc.image(imagePath, 0, 0, {
+                width: doc.page.width,
+                height: doc.page.height,
+                opacity: 0.08
+            });
+        }
+        
+        // Hero section
+        doc.fontSize(16)
+           .fillColor('#5a7360')
+           .text("Rakel & Piers' Wedding", { align: 'center' })
+           .moveDown(0.5);
+        
+        doc.fontSize(24)
+           .fillColor('#2c2c2c')
+           .text(`Welcome, ${guest.displayName}!`, { align: 'center' })
+           .moveDown(2);
+        
+        // "We look forward to seeing you at..."
+        doc.fontSize(18)
+           .fillColor('#5a7360')
+           .text('We look forward to seeing you at...', { align: 'center' })
+           .moveDown(1.5);
+        
+        // Add each event the guest is invited to
+        const events = [];
+        if (guest.events.ceremony) events.push({ key: 'ceremony', details: eventDetails.ceremony });
+        if (guest.events.familyReception) events.push({ key: 'familyReception', details: eventDetails.familyReception });
+        if (guest.events.weddingCelebration) events.push({ key: 'weddingCelebration', details: eventDetails.weddingCelebration });
+        
+        events.forEach((event, index) => {
+            const details = event.details;
+            
+            // Event title
+            doc.fontSize(16)
+               .fillColor('#5a7360')
+               .text(details.title, { align: 'left' })
+               .moveDown(0.5);
+            
+            // Event details
+            doc.fontSize(11)
+               .fillColor('#2c2c2c');
+            
+            doc.font('Helvetica-Bold').text('Date: ', { continued: true })
+               .font('Helvetica').text(details.date)
+               .moveDown(0.3);
+            
+            doc.font('Helvetica-Bold').text('Arrival: ', { continued: true })
+               .font('Helvetica').text(details.arrival)
+               .moveDown(0.3);
+            
+            // Extra info for family reception
+            if (details.extra) {
+                doc.font('Helvetica-Bold').text('Wedding Breakfast: ', { continued: true })
+                   .font('Helvetica').text('7 PM, followed by a little dance!')
+                   .moveDown(0.3);
+            }
+            
+            doc.font('Helvetica-Bold').text('Location: ', { continued: true })
+               .font('Helvetica').text(details.location)
+               .moveDown(0.3);
+            
+            doc.font('Helvetica-Bold').text('Dress Code: ', { continued: true })
+               .font('Helvetica').text(details.dressCode)
+               .moveDown(1.5);
+            
+            // Add separator line if not last event
+            if (index < events.length - 1) {
+                doc.strokeColor('#e8e4dc')
+                   .lineWidth(1)
+                   .moveTo(50, doc.y)
+                   .lineTo(550, doc.y)
+                   .stroke();
+                doc.moveDown(1.5);
+            }
+        });
+        
+        // Footer
+        doc.fontSize(10)
+           .fillColor('#999')
+           .text('April 17-18, 2026 • Hackney, London', 50, doc.page.height - 50, { align: 'center' });
+        
+        // Finalize PDF
+        doc.end();
+        
+        console.log(`Event PDF generated for: ${guest.displayName}`);
+        
+    } catch (error) {
+        console.error('Error generating guest event PDF:', error);
+        res.status(500).json({ error: 'Failed to generate PDF' });
+    }
+});
+
 // ============================================
 // START SERVER
 // ============================================
