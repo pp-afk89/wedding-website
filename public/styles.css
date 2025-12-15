@@ -153,47 +153,16 @@ body {
 }
 
 /* ============================================
-   NAVIGATION - PROFESSIONAL MOBILE-FIRST
+   NAVIGATION - MOBILE OPTIMIZED
    ============================================ */
 
 #navbar {
-    background: #5a7360;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    background: rgba(255, 255, 255, 0.98);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     position: sticky;
     top: 0;
-    z-index: 1000;
-    padding: 0;
-}
-
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 15px 20px;
-    z-index: 1001;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    transition: 0.3s;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
+    z-index: 100;
+    border-bottom: 1px solid #e8e4dc;
 }
 
 .nav-container {
@@ -201,28 +170,30 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0;
-    gap: 0;
+    padding: 10px 15px;
+    flex-wrap: wrap;
+    gap: 5px;
 }
 
 .nav-link {
-    color: white;
+    color: #5a7360;
     text-decoration: none;
-    padding: 18px 24px;
-    display: block;
-    font-size: 0.95rem;
+    padding: 12px 15px;
+    margin: 2px;
     font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: background-color 0.3s;
-    border-bottom: 3px solid transparent;
+    transition: all 0.3s;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    min-height: 44px; /* Mobile tap target */
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-bottom-color: rgba(255,255,255,0.5);
+    background: #f0ede6;
+    color: #3d4f43;
 }
-
 
 /* ============================================
    HERO SECTION
@@ -945,6 +916,37 @@ body {
    V7 NEW FEATURES
    ============================================ */
 
+/* Hamburger Menu Button */
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
 /* Photo Carousel */
 .carousel-container {
     position: relative;
@@ -1107,44 +1109,36 @@ body {
 
 /* Mobile Responsive Updates */
 @media (max-width: 768px) {
-    /* MOBILE NAVIGATION */
-    #navbar {
-        padding: 0;
-    }
-    
+    /* Show hamburger, hide nav on mobile */
     .hamburger {
-        display: flex;
+        display: block;
         position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
+        right: 20px;
+        top: 20px;
     }
     
     .nav-container {
+        position: fixed;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #5a7360;
         flex-direction: column;
-        max-height: 60px;
+        max-height: 0;
         overflow: hidden;
-        transition: max-height 0.4s ease-in-out;
+        transition: max-height 0.3s ease-out;
+        z-index: 1000;
     }
     
     .nav-container.active {
-        max-height: 400px;
+        max-height: 500px;
     }
     
-    .nav-link {
+    .nav-container .nav-link {
         width: 100%;
         text-align: center;
-        padding: 16px;
+        padding: 15px;
         border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    
-    .nav-link:first-child {
-        margin-top: 60px;
-    }
-    
-    .nav-link:hover {
-        background-color: rgba(255,255,255,0.15);
-        border-bottom-color: rgba(255,255,255,0.1);
     }
     
     /* Carousel mobile adjustments */
@@ -1161,16 +1155,4 @@ body {
         right: 5px;
     }
 }
-
-/* TABLET AND DESKTOP */
-@media (min-width: 769px) {
-    .nav-container {
-        padding: 0 20px;
-    }
-    
-    .nav-link {
-        padding: 18px 20px;
-    }
-}
-
 
