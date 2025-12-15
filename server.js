@@ -423,26 +423,35 @@ app.post('/api/guest-event-pdf', async (req, res) => {
         // Pipe PDF to response
         doc.pipe(res);
         
-        // Add watermark background (full page, faded)
+        // Add green hero banner at top
+        doc.rect(0, 0, doc.page.width, 120)
+           .fill('#5a7360');
+        
+        // Add watermark at bottom (scaled naturally, not stretched)
         const imagePath = path.join(__dirname, 'public', 'images', 'save_the_date_graphic_only.png');
         if (fsSync.existsSync(imagePath)) {
-            doc.image(imagePath, 0, 0, {
+            // Position at bottom, natural scale, faded
+            doc.image(imagePath, 0, doc.page.height - 400, {
                 width: doc.page.width,
-                height: doc.page.height,
-                opacity: 0.08
+                opacity: 0.15
             });
         }
         
-        // Hero section
-        doc.fontSize(16)
-           .fillColor('#5a7360')
-           .text("Rakel & Piers' Wedding", { align: 'center' })
+        // Hero section text (on green banner)
+        doc.fillColor('white')
+           .fontSize(14)
+           .text("Rakel & Piers' Wedding", 50, 30, { align: 'center' })
+           .moveDown(0.3);
+        
+        doc.fontSize(26)
+           .text(`Welcome, ${guest.displayName}!`, { align: 'center' })
            .moveDown(0.5);
         
-        doc.fontSize(24)
-           .fillColor('#2c2c2c')
-           .text(`Welcome, ${guest.displayName}!`, { align: 'center' })
-           .moveDown(2);
+        doc.fontSize(12)
+           .text('April 17-18, 2026 • Hackney, London', { align: 'center' });
+        
+        // Move below banner for content
+        doc.y = 150;
         
         // "We look forward to seeing you at..."
         doc.fontSize(18)
