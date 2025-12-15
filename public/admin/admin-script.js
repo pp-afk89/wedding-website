@@ -1,190 +1,345 @@
-/* ============================================
-   WEDDING ADMIN PANEL - COMPLETE JAVASCRIPT
-   - Admin login
-   - Guest management
-   - Dietary requirements display
-   - PDF and Excel export
-   ============================================ */
-
+// Admin Panel JavaScript
+const ADMIN_PASSWORD = 'ar0y092';
 let guests = [];
-let autoSaveTimeout = null;
+let editingIndex = -1;
 
 // ============================================
-// ADMIN LOGIN
+// LOGIN FUNCTIONALITY
 // ============================================
 
-document.getElementById('admin-login-form').addEventListener('submit', async (e) => {
+document.getElementById('admin-login-form').addEventListener('submit', function(e) {
     e.preventDefault();
     
     const password = document.getElementById('admin-password').value;
-    const errorMessage = document.getElementById('login-error');
+    const errorMsg = document.getElementById('login-error');
     
-    try {
-        const response = await fetch('/api/admin/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ password })
-        });
+    if (password === ADMIN_PASSWORD) {
+        // Store login in session
+        sessionStorage.setItem('adminLoggedIn', 'true');
         
-        if (response.ok) {
-            document.getElementById('login-section').style.display = 'none';
-            document.getElementById('admin-content').style.display = 'block';
-            loadGuests();
-        } else {
-            errorMessage.style.display = 'block';
-        }
-    } catch (error) {
-        alert('Connection error. Please try again.');
+        // Hide login, show panel
+        document.getElementById('admin-login').style.display = 'none';
+        document.getElementById('admin-panel').style.display = 'block';
+        
+        // Load guests
+        loadGuests();
+    } else {
+        errorMsg.textContent = 'Incorrect password';
+        errorMsg.classList.add('show');
     }
 });
 
+// Check if already logged in
+if (sessionStorage.getItem('adminLoggedIn') === 'true') {
+    document.getElementById('admin-login').style.display = 'none';
+    document.getElementById('admin-panel').style.display = 'block';
+    loadGuests();
+}
+
+function logout() {
+    sessionStorage.removeItem('adminLoggedIn');
+    location.reload();
+}
+
 // ============================================
-// LOAD AND DISPLAY GUESTS
+// LOAD GUESTS
 // ============================================
 
 async function loadGuests() {
     try {
-        const response = await fetch('/api/guests');
+        const response = await fetch('/api/admin/guests');
         guests = await response.json();
-        
-        updateDashboard();
-        renderGuestTable();
+        renderGuestList();
+        updateGuestCount();
     } catch (error) {
         console.error('Error loading guests:', error);
-        alert('Failed to load guest data');
+        showMessage('Error loading guests', 'error');
     }
 }
 
-function updateDashboard() {
-    // Count totals
-    const totalGuests = guests.length;
-    const ceremonyCount = guests.filter(g => g.events.ceremony).length;
-    const receptionCount = guests.filter(g => g.events.reception).length;
-    const celebrationCount = guests.filter(g => g.events.celebration).length;
+// ============================================
+// RENDER GUEST LIST
+// ============================================
+
+function renderGuestList(searchTerm = '') {
+    const tbody = document.getElementById('guest-list');
     
-    // Update dashboard
-    document.getElementById('total-guests').textContent = totalGuests;
+    // Filter guests by search term
+    const filteredGuests = guests.filter(guest => {
+        const searchLower = searchTerm.toLowerCase();
+        return guest.username.toLowerCase().includes(searchLower) ||
+               guest.displayName.toLowerCase().includes(searchLower);
+    });
+    
+    if (filteredGuests.length === 0) {
+        tbody.innerHTML = '<tr><td colspan="7" style="text-align: center; padding: 40px; color: #999;">No guests found</td></tr>';
+        return;
+    }
+    
+    tbody.innerHTML = filteredGuests.map((guest, index) => {
+        // Find original index
+        const originalIndex = guests.indexOf(guest);
+        
+        // Event badges
+        const events = [];
+        if (guest.events.ceremony) events.push('<span class="event-badge">Ceremony</span>');
+        if (guest.events.familyReception) events.push('<span class="event-badge">Family Reception</span>');
+        if (guest.events.weddingCelebration) events.push('<span class="event-badge">Wedding Celebration</span>');
+        
+        // Dietary requirements indicator
+        const hasDietary = guest.dietaryRequirements && guest.dietaryRequirements.trim() !== '';
+        const dietaryIndicator = hasDietary 
+            ? `<span class="dietary-warning" onclick="showDietaryModal('${guest.displayName.replace(/'/g, "\\'")}', '${guest.dietaryRequirements.replace(/'/g, "\\'").replace(/\n/g, '\\n')}')">⚠️</span>`
+            : '<span style="color: #ccc;">—</span>';
+        
+        // Gift info
+        const giftInfo = guest.giftChoice 
+            ? `<div class="gift-info">
+                 <span class="gift-choice">${guest.giftChoice}</span>
+                 ${guest.paymentStatus ? `<span class="payment-status clicked">${guest.paymentStatus}</span>` : ''}
+               </div>`
+            : '<span style="color: #999;">Not selected</span>';
+        
+        return `
+            <tr>
+                <td><code>${guest.username}</code></td>
+                <td><strong>${guest.displayName}</strong></td>
+                <td><div class="event-badges">${events.join('') || '<span style="color: #999;">None</span>'}</div></td>
+                <td style="text-align: center;">${dietaryIndicator}</td>
+                <td>${giftInfo}</td>
+                <td>${guest.paymentStatus ? '<span class="payment-status clicked">✓ Clicked</span>' : '<span style="color: #999;">—</span>'}</td>
+                <td>
+                    <div class="action-buttons">
+                        <button class="btn-edit" onclick="editGuest(${originalIndex})">Edit</button>
+                        <button class="btn-delete" onclick="deleteGuest(${originalIndex})">Delete</button>
+                    </div>
+                </td>
+            </tr>
+        `;
+    }).join('');
+}
+
+function updateGuestCount() {
+    document.getElementById('guest-count').textContent = guests.length;
+    updateDashboardStats();
+}
+
+// Update dashboard statistics
+function updateDashboardStats() {
+    document.getElementById('total-guests').textContent = guests.length;
+    
+    const ceremonyCount = guests.filter(g => g.events.ceremony).length;
+    const receptionCount = guests.filter(g => g.events.familyReception).length;
+    const celebrationCount = guests.filter(g => g.events.weddingCelebration).length;
+    
     document.getElementById('ceremony-count').textContent = ceremonyCount;
     document.getElementById('reception-count').textContent = receptionCount;
     document.getElementById('celebration-count').textContent = celebrationCount;
 }
 
-function renderGuestTable() {
-    const tbody = document.getElementById('guest-table-body');
-    tbody.innerHTML = '';
+// ============================================
+// SEARCH FUNCTIONALITY
+// ============================================
+
+document.getElementById('search-guests').addEventListener('input', function(e) {
+    renderGuestList(e.target.value);
+});
+
+// ============================================
+// ADD/EDIT GUEST FORM
+// ============================================
+
+document.getElementById('guest-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
     
-    guests.forEach(guest => {
-        const row = document.createElement('tr');
-        
-        // Display Name
-        const nameCell = document.createElement('td');
-        nameCell.textContent = guest.displayName;
-        row.appendChild(nameCell);
-        
-        // Username
-        const usernameCell = document.createElement('td');
-        usernameCell.textContent = guest.username;
-        row.appendChild(usernameCell);
-        
-        // Ceremony Checkbox
-        const ceremonyCell = document.createElement('td');
-        const ceremonyCheckbox = createCheckbox(guest.username, 'ceremony', guest.events.ceremony);
-        ceremonyCell.appendChild(ceremonyCheckbox);
-        row.appendChild(ceremonyCell);
-        
-        // Reception Checkbox
-        const receptionCell = document.createElement('td');
-        const receptionCheckbox = createCheckbox(guest.username, 'reception', guest.events.reception);
-        receptionCell.appendChild(receptionCheckbox);
-        row.appendChild(receptionCell);
-        
-        // Celebration Checkbox
-        const celebrationCell = document.createElement('td');
-        const celebrationCheckbox = createCheckbox(guest.username, 'celebration', guest.events.celebration);
-        celebrationCell.appendChild(celebrationCheckbox);
-        row.appendChild(celebrationCell);
-        
-        // Dietary Requirements
-        const dietaryCell = document.createElement('td');
-        if (guest.dietaryRequirements && guest.dietaryRequirements.trim() !== '') {
-            const indicator = document.createElement('span');
-            indicator.className = 'dietary-indicator';
-            indicator.innerHTML = '⚠️';
-            indicator.title = 'Click to view dietary requirements';
-            indicator.onclick = () => showDietaryModal(guest.displayName, guest.dietaryRequirements);
-            dietaryCell.appendChild(indicator);
-        } else {
-            const noIndicator = document.createElement('span');
-            noIndicator.className = 'no-dietary';
-            noIndicator.textContent = '-';
-            dietaryCell.appendChild(noIndicator);
+    const guestData = {
+        username: document.getElementById('username').value.trim(),
+        displayName: document.getElementById('displayName').value.trim(),
+        events: {
+            ceremony: document.getElementById('ceremony').checked,
+            familyReception: document.getElementById('familyReception').checked,
+            weddingCelebration: document.getElementById('weddingCelebration').checked
+        },
+        giftChoice: null,
+        paymentStatus: null
+    };
+    
+    // Validate at least one event is selected
+    const hasEvent = guestData.events.ceremony || guestData.events.familyReception || guestData.events.weddingCelebration;
+    if (!hasEvent) {
+        showMessage('Please select at least one event', 'error');
+        return;
+    }
+    
+    // Check for duplicate username (when adding new)
+    if (editingIndex === -1) {
+        const duplicate = guests.find(g => g.username === guestData.username);
+        if (duplicate) {
+            showMessage('Username already exists', 'error');
+            return;
         }
-        row.appendChild(dietaryCell);
-        
-        // Gift Selection
-        const giftCell = document.createElement('td');
-        giftCell.textContent = guest.giftSelection || '-';
-        row.appendChild(giftCell);
-        
-        tbody.appendChild(row);
-    });
-}
-
-function createCheckbox(username, eventType, checked) {
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.checked = checked;
-    checkbox.onchange = () => updateGuestEvent(username, eventType, checkbox.checked);
-    return checkbox;
-}
-
-// ============================================
-// UPDATE GUEST DATA
-// ============================================
-
-async function updateGuestEvent(username, eventType, value) {
-    // Find guest in local array
-    const guest = guests.find(g => g.username === username);
-    if (!guest) return;
+    }
     
-    // Update local data
-    guest.events[eventType] = value;
-    
-    // Debounce auto-save (wait 1 second after last change)
-    clearTimeout(autoSaveTimeout);
-    autoSaveTimeout = setTimeout(() => saveGuest(guest), 1000);
-}
-
-async function saveGuest(guest) {
     try {
-        const response = await fetch(`/api/guests/${guest.username}`, {
-            method: 'PUT',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(guest)
-        });
-        
-        if (response.ok) {
-            showSaveIndicator();
-            updateDashboard();
+        if (editingIndex === -1) {
+            // Add new guest
+            const response = await fetch('/api/admin/guests', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(guestData)
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                guests.push(guestData);
+                showMessage('Guest added successfully ✓', 'success');
+                clearForm();
+                renderGuestList();
+                updateGuestCount();
+            }
         } else {
-            alert('Failed to save changes');
+            // Update existing guest
+            // Preserve gift data if it exists
+            if (guests[editingIndex].giftChoice) {
+                guestData.giftChoice = guests[editingIndex].giftChoice;
+                guestData.paymentStatus = guests[editingIndex].paymentStatus;
+            }
+            
+            const response = await fetch(`/api/admin/guests/${guests[editingIndex].username}`, {
+                method: 'PUT',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(guestData)
+            });
+            
+            const result = await response.json();
+            
+            if (result.success) {
+                guests[editingIndex] = guestData;
+                showMessage('Guest updated successfully ✓', 'success');
+                cancelEdit();
+                renderGuestList();
+            }
         }
     } catch (error) {
         console.error('Error saving guest:', error);
-        alert('Connection error. Please try again.');
+        showMessage('Error saving guest', 'error');
+    }
+});
+
+function clearForm() {
+    document.getElementById('username').value = '';
+    document.getElementById('displayName').value = '';
+    document.getElementById('ceremony').checked = false;
+    document.getElementById('familyReception').checked = false;
+    document.getElementById('weddingCelebration').checked = false;
+}
+
+function showMessage(text, type) {
+    const messageEl = document.getElementById('form-message');
+    messageEl.textContent = text;
+    messageEl.className = `form-message ${type}`;
+    
+    // Auto-hide success messages after 3 seconds
+    if (type === 'success') {
+        setTimeout(() => {
+            messageEl.style.display = 'none';
+        }, 3000);
     }
 }
 
-function showSaveIndicator() {
-    const indicator = document.getElementById('save-indicator');
-    indicator.classList.add('show');
-    setTimeout(() => {
-        indicator.classList.remove('show');
-    }, 2000);
+// ============================================
+// EDIT GUEST
+// ============================================
+
+function editGuest(index) {
+    editingIndex = index;
+    const guest = guests[index];
+    
+    // Populate form
+    document.getElementById('username').value = guest.username;
+    document.getElementById('displayName').value = guest.displayName;
+    document.getElementById('ceremony').checked = guest.events.ceremony;
+    document.getElementById('familyReception').checked = guest.events.familyReception;
+    document.getElementById('weddingCelebration').checked = guest.events.weddingCelebration;
+    
+    // Update UI
+    document.getElementById('form-title').textContent = 'Edit Guest';
+    document.getElementById('save-btn').textContent = 'Update Guest';
+    document.getElementById('cancel-btn').style.display = 'inline-block';
+    
+    // Scroll to form
+    document.getElementById('guest-form').scrollIntoView({ behavior: 'smooth', block: 'start' });
+}
+
+function cancelEdit() {
+    editingIndex = -1;
+    clearForm();
+    document.getElementById('form-title').textContent = 'Add New Guest';
+    document.getElementById('save-btn').textContent = 'Add Guest';
+    document.getElementById('cancel-btn').style.display = 'none';
+    document.getElementById('form-message').style.display = 'none';
+}
+
+// ============================================
+// DELETE GUEST
+// ============================================
+
+async function deleteGuest(index) {
+    const guest = guests[index];
+    
+    if (!confirm(`Are you sure you want to delete "${guest.displayName}" (${guest.username})?`)) {
+        return;
+    }
+    
+    try {
+        const response = await fetch(`/api/admin/guests/${guest.username}`, {
+            method: 'DELETE'
+        });
+        
+        const result = await response.json();
+        
+        if (result.success) {
+            guests.splice(index, 1);
+            renderGuestList();
+            updateGuestCount();
+            showMessage('Guest deleted successfully', 'success');
+            
+            // If we were editing this guest, cancel edit
+            if (editingIndex === index) {
+                cancelEdit();
+            }
+        }
+    } catch (error) {
+        console.error('Error deleting guest:', error);
+        showMessage('Error deleting guest', 'error');
+    }
+}
+
+// ============================================
+// EXPORT TO EXCEL
+// ============================================
+
+async function exportToExcel() {
+    try {
+        const response = await fetch('/api/admin/export-excel');
+        const blob = await response.blob();
+        
+        // Create download link
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Wedding_Guests_${new Date().toISOString().split('T')[0]}.xlsx`;
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+        
+        showMessage('Excel file downloaded ✓', 'success');
+    } catch (error) {
+        console.error('Error exporting to Excel:', error);
+        showMessage('Error exporting to Excel', 'error');
+    }
 }
 
 // ============================================
@@ -199,59 +354,58 @@ function showDietaryModal(guestName, requirements) {
     title.textContent = `${guestName} - Dietary Requirements`;
     content.textContent = requirements;
     
-    modal.style.display = 'block';
+    modal.style.display = 'flex';
 }
 
 function closeDietaryModal() {
-    document.getElementById('dietary-modal').style.display = 'none';
+    const modal = document.getElementById('dietary-modal');
+    modal.style.display = 'none';
 }
 
 // Close modal when clicking outside
-window.onclick = function(event) {
+window.addEventListener('click', (e) => {
     const modal = document.getElementById('dietary-modal');
-    if (event.target === modal) {
+    if (e.target === modal) {
         closeDietaryModal();
     }
-}
+});
 
 // ============================================
-// EXPORT FUNCTIONS
+// DIETARY REQUIREMENTS PDF EXPORT
 // ============================================
 
-function downloadExcel() {
-    window.location.href = '/api/guests/export-excel';
-}
-
-function downloadDietaryPDF() {
+async function downloadDietaryPDF() {
     // Check if any guests have dietary requirements
     const hasDietary = guests.some(g => g.dietaryRequirements && g.dietaryRequirements.trim() !== '');
     
     if (!hasDietary) {
-        alert('No guests have submitted dietary requirements yet.');
+        showMessage('No guests have submitted dietary requirements yet', 'error');
         return;
     }
     
-    window.location.href = '/api/dietary/export-pdf';
+    try {
+        const response = await fetch('/api/dietary/export-pdf');
+        
+        if (!response.ok) {
+            throw new Error('PDF generation failed');
+        }
+        
+        const blob = await response.blob();
+        
+        // Create download link
+        const url = window.URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        a.download = `Dietary_Requirements_${new Date().toISOString().split('T')[0]}.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        window.URL.revokeObjectURL(url);
+        document.body.removeChild(a);
+        
+        showMessage('Dietary requirements PDF downloaded ✓', 'success');
+    } catch (error) {
+        console.error('Error downloading dietary PDF:', error);
+        showMessage('Error downloading dietary PDF', 'error');
+    }
 }
 
-function refreshData() {
-    loadGuests();
-    showSaveIndicator();
-}
-
-// ============================================
-// KEYBOARD SHORTCUTS
-// ============================================
-
-document.addEventListener('keydown', (e) => {
-    // Ctrl/Cmd + R to refresh
-    if ((e.ctrlKey || e.metaKey) && e.key === 'r') {
-        e.preventDefault();
-        refreshData();
-    }
-    
-    // Escape to close modal
-    if (e.key === 'Escape') {
-        closeDietaryModal();
-    }
-});
