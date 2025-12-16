@@ -153,74 +153,116 @@ body {
 }
 
 /* ============================================
-   NAVIGATION - PROFESSIONAL MOBILE-FIRST
+   NAVIGATION - MODERN MOBILE-FIRST DESIGN
+   Bottom bar on mobile, top bar on desktop
    ============================================ */
 
+/* Remove hamburger completely - not using it */
+.hamburger {
+    display: none !important;
+}
+
+/* MOBILE FIRST (Bottom Navigation) */
 #navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
     background: #5a7360;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
-    position: sticky;
-    top: 0;
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.15);
     z-index: 1000;
     padding: 0;
 }
 
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 15px 20px;
-    z-index: 1001;
-    flex-direction: column;
-    gap: 5px;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    transition: 0.3s;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
 .nav-container {
-    max-width: 1200px;
-    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     padding: 0;
-    gap: 0;
+    max-width: 100%;
+    margin: 0;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
-    padding: 18px 24px;
-    display: block;
-    font-size: 0.95rem;
+    padding: 12px 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    font-size: 0.75rem;
     font-weight: 500;
-    letter-spacing: 0.5px;
-    transition: background-color 0.3s;
-    border-bottom: 3px solid transparent;
+    flex: 1;
+    transition: background-color 0.2s;
+    border: none;
 }
 
-.nav-link:hover {
-    background-color: rgba(255,255,255,0.1);
-    border-bottom-color: rgba(255,255,255,0.5);
+.nav-link:hover,
+.nav-link:active {
+    background-color: rgba(255,255,255,0.15);
+}
+
+/* Add icons to nav links for mobile */
+.nav-link::before {
+    content: '';
+    font-size: 1.3rem;
+}
+
+.nav-link[href="#home"]::before {
+    content: '🏠';
+}
+
+.nav-link[href="#story"]::before {
+    content: '💕';
+}
+
+.nav-link[href="#gallery"]::before {
+    content: '📸';
+}
+
+.nav-link[href="#gifts"]::before {
+    content: '🎁';
+}
+
+.nav-link[href="#hotels"]::before {
+    content: '🏨';
+}
+
+/* TABLET AND DESKTOP (Top Navigation) */
+@media (min-width: 769px) {
+    #navbar {
+        position: sticky;
+        top: 0;
+        bottom: auto;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    }
+    
+    .nav-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+        justify-content: center;
+        gap: 0;
+    }
+    
+    .nav-link {
+        flex-direction: row;
+        padding: 18px 24px;
+        font-size: 0.95rem;
+        flex: 0;
+        border-bottom: 3px solid transparent;
+    }
+    
+    /* Hide emoji icons on desktop */
+    .nav-link::before {
+        display: none;
+    }
+    
+    .nav-link:hover {
+        background-color: rgba(255,255,255,0.1);
+        border-bottom-color: rgba(255,255,255,0.5);
+    }
 }
 
 
@@ -1107,46 +1149,6 @@ body {
 
 /* Mobile Responsive Updates */
 @media (max-width: 768px) {
-    /* MOBILE NAVIGATION */
-    #navbar {
-        padding: 0;
-    }
-    
-    .hamburger {
-        display: flex;
-        position: absolute;
-        right: 15px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    .nav-container {
-        flex-direction: column;
-        max-height: 60px;
-        overflow: hidden;
-        transition: max-height 0.4s ease-in-out;
-    }
-    
-    .nav-container.active {
-        max-height: 400px;
-    }
-    
-    .nav-link {
-        width: 100%;
-        text-align: center;
-        padding: 16px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    
-    .nav-link:first-child {
-        margin-top: 60px;
-    }
-    
-    .nav-link:hover {
-        background-color: rgba(255,255,255,0.15);
-        border-bottom-color: rgba(255,255,255,0.1);
-    }
-    
     /* Carousel mobile adjustments */
     .carousel-btn {
         padding: 10px 15px;
@@ -1159,17 +1161,6 @@ body {
     
     .carousel-btn.next {
         right: 5px;
-    }
-}
-
-/* TABLET AND DESKTOP */
-@media (min-width: 769px) {
-    .nav-container {
-        padding: 0 20px;
-    }
-    
-    .nav-link {
-        padding: 18px 20px;
     }
 }
 
