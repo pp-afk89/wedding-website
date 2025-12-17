@@ -387,36 +387,6 @@ if (document.getElementById('carousel-track')) {
 }
 
 // ============================================
-// HAMBURGER MENU
-// ============================================
-
-const hamburger = document.getElementById('hamburger');
-const navContainer = document.getElementById('nav-container');
-
-if (hamburger) {
-    hamburger.addEventListener('click', () => {
-        navContainer.classList.toggle('active');
-        hamburger.classList.toggle('active');
-    });
-    
-    // Close menu when clicking a link
-    document.querySelectorAll('.nav-link').forEach(link => {
-        link.addEventListener('click', () => {
-            navContainer.classList.remove('active');
-            hamburger.classList.remove('active');
-        });
-    });
-    
-    // Close menu when clicking outside
-    document.addEventListener('click', (e) => {
-        if (!e.target.closest('#navbar')) {
-            navContainer.classList.remove('active');
-            hamburger.classList.remove('active');
-        }
-    });
-}
-
-// ============================================
 // DIETARY REQUIREMENTS MODAL
 // ============================================
 
