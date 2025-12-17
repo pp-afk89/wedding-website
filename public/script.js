@@ -162,16 +162,19 @@ function createEventCard(eventType) {
 // NAVIGATION
 // ============================================
 
+// Cache DOM elements for better performance
+const navbar = document.querySelector('#navbar');
+const navLinks = document.querySelectorAll('.nav-link');
+
 // Navigation links - smooth scroll
-document.querySelectorAll('.nav-link').forEach(link => {
+navLinks.forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
         
-        const targetId = this.getAttribute('href');
-        const targetSection = document.querySelector(targetId);
+        const targetSection = document.querySelector(this.getAttribute('href'));
         
         if (targetSection) {
-            const navHeight = document.querySelector('#navbar').offsetHeight;
+            const navHeight = navbar.offsetHeight;
             const targetPosition = targetSection.offsetTop - navHeight;
             
             window.scrollTo({

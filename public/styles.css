@@ -167,7 +167,6 @@ body {
     left: 0;
     right: 0;
     z-index: 1000;
-    padding: 0;
 }
 
 .nav-container {
@@ -176,15 +175,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0;
-    gap: 0;
 }
 
 .nav-link {
     color: white;
     text-decoration: none;
     padding: 18px 24px;
-    display: block;
     font-size: 0.95rem;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -829,19 +825,6 @@ body {
     .hotels-content h3,
     .airbnb-section h3 {
         font-size: 1.4rem !important;
-    }
-    
-    /* Navigation - Stack vertically on mobile */
-    .nav-container {
-        flex-direction: column;
-        padding: 8px 10px;
-    }
-    
-    .nav-link {
-        width: 100%;
-        text-align: center;
-        padding: 14px 20px;
-        font-size: 1rem;
     }
     
     /* Gallery - 2 columns on mobile */
