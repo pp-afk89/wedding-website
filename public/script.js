@@ -1,5 +1,36 @@
 // Wedding Website Frontend - JSON Backend Integration
 
+// ============================================
+// SCROLL-REACTIVE NAVIGATION
+// ============================================
+let lastScrollTop = 0;
+const navbar = document.getElementById('navbar');
+const scrollThreshold = 100; // Start hiding after 100px scroll
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    // Don't hide navbar at the very top
+    if (scrollTop < scrollThreshold) {
+        navbar.classList.remove('nav-hidden');
+        navbar.classList.add('nav-visible');
+        return;
+    }
+    
+    // Scrolling down - hide navbar
+    if (scrollTop > lastScrollTop) {
+        navbar.classList.add('nav-hidden');
+        navbar.classList.remove('nav-visible');
+    } 
+    // Scrolling up - show navbar
+    else {
+        navbar.classList.remove('nav-hidden');
+        navbar.classList.add('nav-visible');
+    }
+    
+    lastScrollTop = scrollTop;
+});
+
 // Event Details
 const eventDetails = {
     ceremony: {
@@ -246,7 +277,20 @@ async function recordPaymentClick() {
 // ============================================
 
 let currentPhotoIndex = 0;
+let currentLightboxIndex = 0;
 const totalPhotos = 10;
+const photoUrls = [
+    '/images/gallery/photo1.jpg',
+    '/images/gallery/photo2.jpg',
+    '/images/gallery/photo3.jpg',
+    '/images/gallery/photo4.jpg',
+    '/images/gallery/photo5.jpg',
+    '/images/gallery/photo6.jpg',
+    '/images/gallery/photo7.jpg',
+    '/images/gallery/photo8.jpg',
+    '/images/gallery/photo9.jpg',
+    '/images/gallery/photo10.jpg'
+];
 
 function initCarousel() {
     const prevBtn = document.getElementById('carousel-prev');
@@ -256,10 +300,17 @@ function initCarousel() {
     prevBtn.addEventListener('click', () => changeSlide(-1));
     nextBtn.addEventListener('click', () => changeSlide(1));
     
-    // Keyboard navigation
+    // Keyboard navigation for carousel
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowLeft') changeSlide(-1);
-        if (e.key === 'ArrowRight') changeSlide(1);
+        const lightbox = document.getElementById('lightbox');
+        if (lightbox.style.display === 'block') {
+            if (e.key === 'ArrowLeft') changeLightboxImage(-1);
+            if (e.key === 'ArrowRight') changeLightboxImage(1);
+            if (e.key === 'Escape') closeLightbox();
+        } else {
+            if (e.key === 'ArrowLeft') changeSlide(-1);
+            if (e.key === 'ArrowRight') changeSlide(1);
+        }
     });
     
     // Touch/swipe support
@@ -277,9 +328,9 @@ function initCarousel() {
     
     function handleSwipe() {
         if (touchStartX - touchEndX > 50) {
-            changeSlide(1); // Swipe left
+            changeSlide(1);
         } else if (touchEndX - touchStartX > 50) {
-            changeSlide(-1); // Swipe right
+            changeSlide(-1);
         }
     }
     
@@ -460,3 +511,45 @@ async function downloadEventPDF() {
     }
 }
 
+
+// ============================================
+// LIGHTBOX FUNCTIONS
+// ============================================
+
+function openLightbox(index) {
+    currentLightboxIndex = index;
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    
+    lightboxImg.src = photoUrls[index];
+    lightbox.style.display = 'block';
+    updateLightboxCounter();
+    
+    // Prevent body scroll when lightbox is open
+    document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+function changeLightboxImage(direction) {
+    currentLightboxIndex += direction;
+    
+    if (currentLightboxIndex < 0) {
+        currentLightboxIndex = totalPhotos - 1;
+    } else if (currentLightboxIndex >= totalPhotos) {
+        currentLightboxIndex = 0;
+    }
+    
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = photoUrls[currentLightboxIndex];
+    updateLightboxCounter();
+}
+
+function updateLightboxCounter() {
+    const counter = document.getElementById('lightbox-counter');
+    counter.textContent = `${currentLightboxIndex + 1} / ${totalPhotos}`;
+}

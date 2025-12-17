@@ -8,7 +8,8 @@
       "weddingCelebration": true
     },
     "giftChoice": null,
-    "paymentStatus": null
+    "paymentStatus": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Alice Smith",
@@ -19,7 +20,8 @@
       "weddingCelebration": true
     },
     "giftChoice": null,
-    "paymentStatus": null
+    "paymentStatus": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Bob Jones",
@@ -30,6 +32,7 @@
       "weddingCelebration": true
     },
     "giftChoice": null,
-    "paymentStatus": null
+    "paymentStatus": null,
+    "dietaryRequirements": ""
   }
 ]

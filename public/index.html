@@ -30,17 +30,12 @@
     <div id="main-site" style="display: none;">
         <!-- Navigation -->
         <nav id="navbar">
-            <button class="hamburger" id="hamburger" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
             <div class="nav-container" id="nav-container">
                 <a href="#home" class="nav-link">Home</a>
-                <a href="#story" class="nav-link">Our Story</a>
+                <a href="#story" class="nav-link">Our&nbsp;Story</a>
                 <a href="#gallery" class="nav-link">Gallery</a>
                 <a href="#gifts" class="nav-link">Gifts</a>
-                <a href="#hotels" class="nav-link">Hotel Recommendations</a>
+                <a href="#hotels" class="nav-link">Hotels</a>
             </div>
         </nav>
 
@@ -85,29 +80,39 @@
         <section id="gallery" class="gallery-section">
             <div class="container">
                 <h2>Gallery</h2>
-                <div class="carousel-container">
-                    <div class="carousel">
+                <div class="gallery-carousel-container">
+                    <div class="gallery-carousel">
                         <div class="carousel-track" id="carousel-track">
-                            <div class="carousel-slide"><img src="/images/gallery/photo1.jpg" alt="Photo 1"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo2.jpg" alt="Photo 2"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo3.jpg" alt="Photo 3"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo4.jpg" alt="Photo 4"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo5.jpg" alt="Photo 5"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo6.jpg" alt="Photo 6"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo7.jpg" alt="Photo 7"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo8.jpg" alt="Photo 8"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo9.jpg" alt="Photo 9"></div>
-                            <div class="carousel-slide"><img src="/images/gallery/photo10.jpg" alt="Photo 10"></div>
+                            <div class="carousel-slide" onclick="openLightbox(0)"><img src="/images/gallery/photo1.jpg" alt="Photo 1"></div>
+                            <div class="carousel-slide" onclick="openLightbox(1)"><img src="/images/gallery/photo2.jpg" alt="Photo 2"></div>
+                            <div class="carousel-slide" onclick="openLightbox(2)"><img src="/images/gallery/photo3.jpg" alt="Photo 3"></div>
+                            <div class="carousel-slide" onclick="openLightbox(3)"><img src="/images/gallery/photo4.jpg" alt="Photo 4"></div>
+                            <div class="carousel-slide" onclick="openLightbox(4)"><img src="/images/gallery/photo5.jpg" alt="Photo 5"></div>
+                            <div class="carousel-slide" onclick="openLightbox(5)"><img src="/images/gallery/photo6.jpg" alt="Photo 6"></div>
+                            <div class="carousel-slide" onclick="openLightbox(6)"><img src="/images/gallery/photo7.jpg" alt="Photo 7"></div>
+                            <div class="carousel-slide" onclick="openLightbox(7)"><img src="/images/gallery/photo8.jpg" alt="Photo 8"></div>
+                            <div class="carousel-slide" onclick="openLightbox(8)"><img src="/images/gallery/photo9.jpg" alt="Photo 9"></div>
+                            <div class="carousel-slide" onclick="openLightbox(9)"><img src="/images/gallery/photo10.jpg" alt="Photo 10"></div>
                         </div>
-                        <button class="carousel-btn prev" id="carousel-prev">‹</button>
-                        <button class="carousel-btn next" id="carousel-next">›</button>
+                        <button class="carousel-nav-btn carousel-prev" id="carousel-prev" aria-label="Previous">‹</button>
+                        <button class="carousel-nav-btn carousel-next" id="carousel-next" aria-label="Next">›</button>
                     </div>
-                    <div class="carousel-counter" id="carousel-counter">1 / 10</div>
+                    <div class="carousel-info">
+                        <span class="carousel-counter" id="carousel-counter">1 / 10</span>
+                        <span class="carousel-hint">Click photo to enlarge</span>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <!-- Remove old lightbox as carousel replaces it -->
+        <!-- Lightbox for full-size images -->
+        <div id="lightbox" class="lightbox">
+            <span class="lightbox-close" onclick="closeLightbox()">&times;</span>
+            <img class="lightbox-content" id="lightbox-img" alt="">
+            <button class="lightbox-nav lightbox-prev" onclick="changeLightboxImage(-1)">‹</button>
+            <button class="lightbox-nav lightbox-next" onclick="changeLightboxImage(1)">›</button>
+            <div class="lightbox-counter" id="lightbox-counter">1 / 10</div>
+        </div>
 
         <!-- Gifts Section -->
         <section id="gifts" class="gifts-section">

@@ -423,38 +423,42 @@ app.post('/api/guest-event-pdf', async (req, res) => {
         // Pipe PDF to response
         doc.pipe(res);
         
-        // Add green hero banner at top
-        doc.rect(0, 0, doc.page.width, 120)
-           .fill('#5a7360');
+        // Add cream/beige background to entire page
+        doc.rect(0, 0, doc.page.width, doc.page.height)
+           .fill('#f5f3ef');
         
-        // Add watermark at bottom (scaled naturally, not stretched)
-        const imagePath = path.join(__dirname, 'public', 'images', 'save_the_date_graphic_only.png');
-        if (fsSync.existsSync(imagePath)) {
-            // Position at bottom, natural scale, faded
-            doc.image(imagePath, 0, doc.page.height - 400, {
+        // Add watermark graphic - FULL PAGE, edge to edge
+        const watermarkPath = path.join(__dirname, 'public', 'images', 'wedding_graphic_watermark.png');
+        if (fsSync.existsSync(watermarkPath)) {
+            // Fill entire page - left edge to right edge, top to bottom
+            doc.image(watermarkPath, 0, 0, {
                 width: doc.page.width,
-                opacity: 0.15
+                height: doc.page.height
             });
         }
         
+        // Add green hero banner at top (on top of watermark)
+        doc.rect(0, 0, doc.page.width, 100)
+           .fill('#5a7360');
+        
         // Hero section text (on green banner)
         doc.fillColor('white')
-           .fontSize(14)
-           .text("Rakel & Piers' Wedding", 50, 30, { align: 'center' })
+           .fontSize(13)
+           .text("Rakel & Piers' Wedding", 50, 25, { align: 'center' })
            .moveDown(0.3);
         
-        doc.fontSize(26)
+        doc.fontSize(22)
            .text(`Welcome, ${guest.displayName}!`, { align: 'center' })
-           .moveDown(0.5);
+           .moveDown(0.2);
         
-        doc.fontSize(12)
-           .text('April 17-18, 2026 • Hackney, London', { align: 'center' });
+        doc.fontSize(11)
+           .text('April 2026', { align: 'center' });
         
         // Move below banner for content
-        doc.y = 150;
+        doc.y = 140;
         
         // "We look forward to seeing you at..."
-        doc.fontSize(18)
+        doc.fontSize(16)
            .fillColor('#5a7360')
            .text('We look forward to seeing you at...', { align: 'center' })
            .moveDown(1.5);
@@ -467,55 +471,59 @@ app.post('/api/guest-event-pdf', async (req, res) => {
         
         events.forEach((event, index) => {
             const details = event.details;
+            const startY = doc.y;
+            
+            // Calculate box height based on content
+            let boxHeight = 160;
+            if (details.extra) boxHeight += 15;
+            
+            // Draw transparent white box
+            doc.rect(50, startY, doc.page.width - 100, boxHeight)
+               .fillOpacity(0.7)
+               .fill('white')
+               .fillOpacity(1);
+            
+            // Add padding and content
+            const contentX = 70;
+            doc.y = startY + 15;
             
             // Event title
-            doc.fontSize(16)
+            doc.fontSize(14)
                .fillColor('#5a7360')
-               .text(details.title, { align: 'left' })
-               .moveDown(0.5);
+               .font('Helvetica-Bold')
+               .text(details.title, contentX, doc.y)
+               .font('Helvetica')
+               .moveDown(0.7);
             
             // Event details
-            doc.fontSize(11)
+            doc.fontSize(10)
                .fillColor('#2c2c2c');
             
-            doc.font('Helvetica-Bold').text('Date: ', { continued: true })
+            doc.font('Helvetica-Bold').text('Date: ', contentX, doc.y, { continued: true })
                .font('Helvetica').text(details.date)
-               .moveDown(0.3);
+               .moveDown(0.4);
             
-            doc.font('Helvetica-Bold').text('Arrival: ', { continued: true })
+            doc.font('Helvetica-Bold').text('Arrival: ', contentX, doc.y, { continued: true })
                .font('Helvetica').text(details.arrival)
-               .moveDown(0.3);
+               .moveDown(0.4);
             
             // Extra info for family reception
             if (details.extra) {
-                doc.font('Helvetica-Bold').text('Wedding Breakfast: ', { continued: true })
+                doc.font('Helvetica-Bold').text('Wedding Breakfast: ', contentX, doc.y, { continued: true })
                    .font('Helvetica').text('7 PM, followed by a little dance!')
-                   .moveDown(0.3);
+                   .moveDown(0.4);
             }
             
-            doc.font('Helvetica-Bold').text('Location: ', { continued: true })
+            doc.font('Helvetica-Bold').text('Location: ', contentX, doc.y, { continued: true })
                .font('Helvetica').text(details.location)
-               .moveDown(0.3);
+               .moveDown(0.4);
             
-            doc.font('Helvetica-Bold').text('Dress Code: ', { continued: true })
-               .font('Helvetica').text(details.dressCode)
-               .moveDown(1.5);
+            doc.font('Helvetica-Bold').text('Dress Code: ', contentX, doc.y, { continued: true })
+               .font('Helvetica').text(details.dressCode);
             
-            // Add separator line if not last event
-            if (index < events.length - 1) {
-                doc.strokeColor('#e8e4dc')
-                   .lineWidth(1)
-                   .moveTo(50, doc.y)
-                   .lineTo(550, doc.y)
-                   .stroke();
-                doc.moveDown(1.5);
-            }
+            // Move to next event position
+            doc.y = startY + boxHeight + 20;
         });
-        
-        // Footer
-        doc.fontSize(10)
-           .fillColor('#999')
-           .text('April 17-18, 2026 • Hackney, London', 50, doc.page.height - 50, { align: 'center' });
         
         // Finalize PDF
         doc.end();
