@@ -1,7 +1,7 @@
 [
   {
-    "username": "mum and dad",
-    "displayName": "Maggie Purdy",
+    "username": "maggie purdy",
+    "displayName": "Mum and Dad",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -16,8 +16,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "mum and dad",
-    "displayName": "Mike Purdy",
+    "username": "mike purdy",
+    "displayName": "Mum and Dad",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -32,8 +32,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "nick, sarah, hannah and holly",
-    "displayName": "Nick Purdy",
+    "username": "nick purdy",
+    "displayName": "Nick, Sarah, Hannah and Holly",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -48,8 +48,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "nick, sarah, hannah and holly",
-    "displayName": "Sarah Purdy",
+    "username": "sarah purdy",
+    "displayName": "Nick, Sarah, Hannah and Holly",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -64,8 +64,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "lisa and dave",
-    "displayName": "Lisa Smith",
+    "username": "lisa smith",
+    "displayName": "Lisa and Dave",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -80,8 +80,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "lisa and dave",
-    "displayName": "David Penman",
+    "username": "david penman",
+    "displayName": "Lisa and Dave",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -96,8 +96,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "josie and reece",
-    "displayName": "Josie Smith-Bizicki",
+    "username": "josie smith-bizicki",
+    "displayName": "Josie and Reece",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -112,8 +112,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "josie and reece",
-    "displayName": "Reece Bellingham",
+    "username": "reece bellingham",
+    "displayName": "Josie and Reece",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -128,8 +128,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "zoe",
-    "displayName": "Zoe Smith-Bizicki",
+    "username": "zoe smith-bizicki",
+    "displayName": "Zoe",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -144,8 +144,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "peter and lisa",
-    "displayName": "Peter Purdy",
+    "username": "peter purdy",
+    "displayName": "Peter and Lisa",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -160,8 +160,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "peter and lisa",
-    "displayName": "Lisa Havard",
+    "username": "lisa havard",
+    "displayName": "Peter and Lisa",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -176,8 +176,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "jane and mike",
-    "displayName": "Jane Mills",
+    "username": "jane mills",
+    "displayName": "Jane and Mike",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -192,8 +192,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "jane and mike",
-    "displayName": "Mike Mills",
+    "username": "mike mills",
+    "displayName": "Jane and Mike",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -208,8 +208,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "kamla",
-    "displayName": "Kamla Lloyd",
+    "username": "kamla lloyd",
+    "displayName": "Kamla",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -224,8 +224,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "jane and robin",
-    "displayName": "Jane Greetham",
+    "username": "jane greetham",
+    "displayName": "Jane and Robin",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -240,8 +240,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "jane and robin",
-    "displayName": "Robin Greetham",
+    "username": "robin greetham",
+    "displayName": "Jane and Robin",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -256,8 +256,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "jean and martin",
-    "displayName": "Jean Saul",
+    "username": "jean saul",
+    "displayName": "Jean and Martin",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -272,8 +272,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "jean and martin",
-    "displayName": "Martin Saul",
+    "username": "martin saul",
+    "displayName": "Jean and Martin",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -288,8 +288,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "gil and jane",
-    "displayName": "Gil Whyman",
+    "username": "gil whyman",
+    "displayName": "Gil and Jane",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -304,8 +304,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "gil and jane",
-    "displayName": "Jane Whyman",
+    "username": "jane whyman",
+    "displayName": "Gil and Jane",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -320,8 +320,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "sasan, sophie, mara and layla",
-    "displayName": "Sasan Aghlani",
+    "username": "sasan aghlani",
+    "displayName": "Sasan, Sophie, Mara and Layla",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -336,8 +336,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "sasan, sophie, mara and layla",
-    "displayName": "Sophie Aghlani",
+    "username": "sophie aghlani",
+    "displayName": "Sasan, Sophie, Mara and Layla",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -352,8 +352,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alex, em, isla and marli",
-    "displayName": "Alex Bibic",
+    "username": "alex bibic",
+    "displayName": "Alex, Em, Isla and Marli",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -368,8 +368,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alex, em, isla and marli",
-    "displayName": "Emily Dyson",
+    "username": "emily dyson",
+    "displayName": "Alex, Em, Isla and Marli",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -384,8 +384,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "dimal, sam and edris",
-    "displayName": "Dimal Luta",
+    "username": "dimal luta",
+    "displayName": "Dimal, Sam and Edris",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -400,8 +400,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "dimal, sam and edris",
-    "displayName": "Sam Conkling",
+    "username": "sam conkling",
+    "displayName": "Dimal, Sam and Edris",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -416,8 +416,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "rhys and lizzie",
-    "displayName": "Rhys Lloyd",
+    "username": "rhys lloyd",
+    "displayName": "Rhys and Lizzie",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -432,8 +432,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "rhys and lizzie",
-    "displayName": "Lizzie",
+    "username": "lizzie",
+    "displayName": "Rhys and Lizzie",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -448,8 +448,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "kathryn, luke and rafi",
-    "displayName": "Kathryn Shepping",
+    "username": "kathryn shepping",
+    "displayName": "Kathryn, Luke and Rafi",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -464,8 +464,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "kathryn, luke and rafi",
-    "displayName": "Luke",
+    "username": "luke",
+    "displayName": "Kathryn, Luke and Rafi",
     "events": {
       "ceremony": true,
       "familyReception": true,
@@ -480,8 +480,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alfredo, isa and nerea",
-    "displayName": "Alfredo Lopez Nieves",
+    "username": "alfredo lopez nieves",
+    "displayName": "Alfredo, Isa and Nerea",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -496,8 +496,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alfredo, isa and nerea",
-    "displayName": "Isa",
+    "username": "isa",
+    "displayName": "Alfredo, Isa and Nerea",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -512,8 +512,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "john and steff",
-    "displayName": "John Sprunt",
+    "username": "john sprunt",
+    "displayName": "John and Steff",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -528,8 +528,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "john and steff",
-    "displayName": "Steff Tschirky",
+    "username": "steff tschirky",
+    "displayName": "John and Steff",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -544,8 +544,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "matt and amy",
-    "displayName": "Matt Beard",
+    "username": "matt beard",
+    "displayName": "Matt and Amy",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -560,8 +560,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "matt and amy",
-    "displayName": "Amy",
+    "username": "amy",
+    "displayName": "Matt and Amy",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -576,8 +576,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "ed, bekka and isla",
-    "displayName": "Edward Latham",
+    "username": "edward latham",
+    "displayName": "Ed, Bekka and Isla",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -592,8 +592,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "ed, bekka and isla",
-    "displayName": "Becka Latham",
+    "username": "becka latham",
+    "displayName": "Ed, Bekka and Isla",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -608,8 +608,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alex, katie, penny and sadie",
-    "displayName": "Alex Li",
+    "username": "alex li",
+    "displayName": "Alex, Katie, Penny and Sadie",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -624,8 +624,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alex, katie, penny and sadie",
-    "displayName": "Katie Smith",
+    "username": "katie smith",
+    "displayName": "Alex, Katie, Penny and Sadie",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -640,8 +640,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "josh, izzy and casper",
-    "displayName": "Josh Burke",
+    "username": "josh burke",
+    "displayName": "Josh, Izzy and Casper",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -656,8 +656,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "josh, izzy and casper",
-    "displayName": "Izzy Wilson",
+    "username": "izzy wilson",
+    "displayName": "Josh, Izzy and Casper",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -672,8 +672,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "ed",
-    "displayName": "Ed Paginton",
+    "username": "ed paginton",
+    "displayName": "Ed",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -688,8 +688,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "tom, amanda and moa",
-    "displayName": "Tom Bowens",
+    "username": "tom bowens",
+    "displayName": "Tom, Amanda and Moa",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -704,8 +704,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "richard",
-    "displayName": "Richard Hoggart",
+    "username": "amanda",
+    "displayName": "",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -720,8 +720,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "tim and kat",
-    "displayName": "Tim Black",
+    "username": "richard hoggart",
+    "displayName": "Richard",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -736,8 +736,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "sean",
-    "displayName": "Sean Nichols",
+    "username": "tim black",
+    "displayName": "Tim and Kat",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -752,8 +752,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "jack",
-    "displayName": "Jack Dahlsen",
+    "username": "kat",
+    "displayName": "",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -768,8 +768,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "claudia, sam, romy and pussycat",
-    "displayName": "Claudia Lazarus",
+    "username": "sean nichols",
+    "displayName": "Sean",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -784,8 +784,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "claudia, sam, romy and pussycat",
-    "displayName": "Sam Giles",
+    "username": "jack dahlsen",
+    "displayName": "Jack",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -800,8 +800,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "cassy, sam, willa and ebba",
-    "displayName": "Cassy Locke",
+    "username": "claudia lazarus",
+    "displayName": "Claudia, Sam, Romy and Pussycat",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -816,8 +816,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "cassy, sam, willa and ebba",
-    "displayName": "Sam Collins",
+    "username": "sam giles",
+    "displayName": "Claudia, Sam, Romy and Pussycat",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -832,8 +832,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "moises and lisa",
-    "displayName": "Moises Blanco",
+    "username": "cassy locke",
+    "displayName": "Cassy, Sam, Willa and Ebba",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -848,8 +848,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "moises and lisa",
-    "displayName": "Lisa",
+    "username": "sam collins",
+    "displayName": "Cassy, Sam, Willa and Ebba",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -864,8 +864,40 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "grace",
-    "displayName": "Grace Mcdonagh",
+    "username": "moises blanco",
+    "displayName": "Moises and Lisa",
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "lisa",
+    "displayName": "Moises and Lisa",
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "grace mcdonagh",
+    "displayName": "Grace",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -880,8 +912,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "steff",
-    "displayName": "Estefanie Liehr",
+    "username": "estefanie liehr",
+    "displayName": "Steff",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -896,8 +928,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "brodie",
-    "displayName": "Brodie Wyatt",
+    "username": "brodie wyatt",
+    "displayName": "Brodie",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -912,8 +944,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "paddy",
-    "displayName": "Patrick Bolton",
+    "username": "patrick bolton",
+    "displayName": "Paddy",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -928,8 +960,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "roisin",
-    "displayName": "Roisin Kenny",
+    "username": "roisin kenny",
+    "displayName": "Roisin",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -944,8 +976,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "emily",
-    "displayName": "Emily Baker",
+    "username": "emily baker",
+    "displayName": "Emily",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -960,8 +992,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "laurence",
-    "displayName": "Laurence Coombe",
+    "username": "laurence coombe",
+    "displayName": "Laurence",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -976,8 +1008,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "charlotte",
-    "displayName": "Charlotte Garfield",
+    "username": "charlotte garfield",
+    "displayName": "Charlotte",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -992,8 +1024,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "vish and flo",
-    "displayName": "Vishnu Sakthivel",
+    "username": "vishnu sakthivel",
+    "displayName": "Vish and Flo",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -1008,8 +1040,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "vish and flo",
-    "displayName": "Florence Ackland",
+    "username": "florence ackland",
+    "displayName": "Vish and Flo",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -1024,8 +1056,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "shan",
-    "displayName": "Shan Mandora",
+    "username": "shan mandora",
+    "displayName": "Shan",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -1040,8 +1072,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alex",
-    "displayName": "Alex Edmiston",
+    "username": "alex edmiston",
+    "displayName": "Alex",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -1056,8 +1088,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "fred",
-    "displayName": "Fred Paginton",
+    "username": "fred paginton",
+    "displayName": "Fred",
     "events": {
       "ceremony": false,
       "familyReception": false,
@@ -1088,8 +1120,168 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "david",
-    "displayName": "David Penso",
+    "username": "claire paginton",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "lorel scriven",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "clare mullins",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "josh myatt",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "aaron payne",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "patrick walsh",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "rafa",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "armand",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "said",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "philip",
+    "displayName": "",
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "david penso",
+    "displayName": "David",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1104,8 +1296,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "vica",
-    "displayName": "Vica Marcucci",
+    "username": "vica marcucci",
+    "displayName": "Vica",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1120,8 +1312,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "tayla",
-    "displayName": "Tayla Montague",
+    "username": "tayla montague",
+    "displayName": "Tayla",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1136,8 +1328,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "charlie",
-    "displayName": "Charlie Cook",
+    "username": "charlie cook",
+    "displayName": "Charlie",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1152,8 +1344,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "athene",
-    "displayName": "Athene Aristocleous",
+    "username": "athene aristocleous",
+    "displayName": "Athene",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1168,8 +1360,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "hannah",
-    "displayName": "Hannah Michael",
+    "username": "hannah michael",
+    "displayName": "Hannah",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1184,8 +1376,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "birsu",
-    "displayName": "Birsu Kucukdeveci",
+    "username": "birsu kucukdeveci",
+    "displayName": "Birsu",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1200,8 +1392,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "eda",
-    "displayName": "Eda Gurdamar",
+    "username": "eda gurdamar",
+    "displayName": "Eda",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1216,8 +1408,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "doruk",
-    "displayName": "Doruk Kurt",
+    "username": "doruk kurt",
+    "displayName": "Doruk",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1232,8 +1424,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "ceylan",
-    "displayName": "Ceylan Inan",
+    "username": "ceylan inan",
+    "displayName": "Ceylan",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1248,8 +1440,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "lewis",
-    "displayName": "Lewis O'Neill",
+    "username": "lewis o'neill",
+    "displayName": "Lewis",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1264,8 +1456,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alara",
-    "displayName": "Alara Erisen",
+    "username": "alara erisen",
+    "displayName": "Alara",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1280,8 +1472,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "sami",
-    "displayName": "Sami Aroyo",
+    "username": "sami aroyo",
+    "displayName": "Sami",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1296,8 +1488,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "alp",
-    "displayName": "Alp Gulel",
+    "username": "alp gulel",
+    "displayName": "Alp",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1312,8 +1504,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "gozde",
-    "displayName": "Gozde Ertekin",
+    "username": "gozde ertekin",
+    "displayName": "Gozde",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1328,8 +1520,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "violet",
-    "displayName": "Violet Aroyo",
+    "username": "violet aroyo",
+    "displayName": "Violet",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1344,8 +1536,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "nesim",
-    "displayName": "Nesim Bahar",
+    "username": "nesim bahar",
+    "displayName": "Nesim",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1360,8 +1552,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "lea",
-    "displayName": "Lea Bahar",
+    "username": "lea bahar",
+    "displayName": "Lea",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1376,8 +1568,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "ediz",
-    "displayName": "Ediz Bahar",
+    "username": "ediz bahar",
+    "displayName": "Ediz",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1392,8 +1584,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "arzu",
-    "displayName": "Arzu Bahar",
+    "username": "arzu bahar",
+    "displayName": "Arzu",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1408,8 +1600,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "elif",
-    "displayName": "Elif Sansoy",
+    "username": "elif sansoy",
+    "displayName": "Elif",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1424,8 +1616,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "yigit",
-    "displayName": "Yigit Kayabasi",
+    "username": "yigit kayabasi",
+    "displayName": "Yigit",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1440,8 +1632,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "liana",
-    "displayName": "Liana Benbanaste",
+    "username": "liana benbanaste",
+    "displayName": "Liana",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1456,8 +1648,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "vedat",
-    "displayName": "Vedat Uzdil",
+    "username": "vedat uzdil",
+    "displayName": "Vedat",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1472,8 +1664,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "erica",
-    "displayName": "Erica Bridge",
+    "username": "erica bridge",
+    "displayName": "Erica",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1488,8 +1680,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "samantha",
-    "displayName": "Samantha Mellina",
+    "username": "samantha mellina",
+    "displayName": "Samantha",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1504,8 +1696,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "breighanna",
-    "displayName": "Breighanna Minnema",
+    "username": "breighanna minnema",
+    "displayName": "Breighanna",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1520,8 +1712,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "seda",
-    "displayName": "Seda Oznal",
+    "username": "seda oznal",
+    "displayName": "Seda",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1536,8 +1728,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "masis",
-    "displayName": "Masis Kalatas",
+    "username": "masis kalatas",
+    "displayName": "Masis",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1552,8 +1744,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "ali",
-    "displayName": "Ali Can Altiparmak",
+    "username": "ali can altiparmak",
+    "displayName": "Ali",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1568,8 +1760,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "matthew",
-    "displayName": "Matthew Holloway",
+    "username": "matthew holloway",
+    "displayName": "Matthew",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1584,8 +1776,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "joel",
-    "displayName": "Joel Bebasa",
+    "username": "joel bebasa",
+    "displayName": "Joel",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1600,8 +1792,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "elliot",
-    "displayName": "Elliot Ryan",
+    "username": "elliot ryan",
+    "displayName": "Elliot",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1616,8 +1808,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "morgan",
-    "displayName": "Morgan Doelp",
+    "username": "morgan doelp",
+    "displayName": "Morgan",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1632,8 +1824,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "sibel",
-    "displayName": "Sibel Amuraben",
+    "username": "sibel amuraben",
+    "displayName": "Sibel",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1648,8 +1840,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "ilker",
-    "displayName": "Ilker Amuraben",
+    "username": "ilker amuraben",
+    "displayName": "Ilker",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1664,8 +1856,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "mirey",
-    "displayName": "Mirey Nadler",
+    "username": "mirey nadler",
+    "displayName": "Mirey",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1680,8 +1872,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "serim",
-    "displayName": "Serim Franko",
+    "username": "serim franko",
+    "displayName": "Serim",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1696,8 +1888,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "polen",
-    "displayName": "Polen Franko",
+    "username": "polen franko",
+    "displayName": "Polen",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1712,8 +1904,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "izak",
-    "displayName": "Izak Ancel",
+    "username": "izak ancel",
+    "displayName": "Izak",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1744,8 +1936,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "izzet",
-    "displayName": "Izzet Ancel",
+    "username": "izzet ancel",
+    "displayName": "Izzet",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1760,8 +1952,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "joel",
-    "displayName": "Joel Ancel",
+    "username": "joel ancel",
+    "displayName": "Joel",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1776,8 +1968,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "oya",
-    "displayName": "Oya Goksahin",
+    "username": "oya goksahin",
+    "displayName": "Oya",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1792,8 +1984,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "eslin",
-    "displayName": "Eslin Saporta",
+    "username": "eslin saporta",
+    "displayName": "Eslin",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1808,8 +2000,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "hayati",
-    "displayName": "Hayati Abulaf",
+    "username": "hayati abulaf",
+    "displayName": "Hayati",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1824,8 +2016,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "uzair",
-    "displayName": "Uzair Ajmi",
+    "username": "uzair ajmi",
+    "displayName": "Uzair",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1840,8 +2032,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "montel",
-    "displayName": "Montel Young",
+    "username": "montel young",
+    "displayName": "Montel",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1856,8 +2048,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "liam",
-    "displayName": "Liam Richardson",
+    "username": "liam richardson",
+    "displayName": "Liam",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1872,8 +2064,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "daniele",
-    "displayName": "Daniele Portaluri",
+    "username": "daniele portaluri",
+    "displayName": "Daniele",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1888,8 +2080,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "david",
-    "displayName": "David Cummins",
+    "username": "david cummins",
+    "displayName": "David",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1904,8 +2096,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "zach",
-    "displayName": "Zach Hallet",
+    "username": "zach hallet",
+    "displayName": "Zach",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1920,8 +2112,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "leon",
-    "displayName": "Leon Penso",
+    "username": "leon penso",
+    "displayName": "Leon",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1936,8 +2128,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "tanya",
-    "displayName": "Tanya Penso",
+    "username": "tanya penso",
+    "displayName": "Tanya",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1952,8 +2144,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "gina",
-    "displayName": "Gina Penso",
+    "username": "gina penso",
+    "displayName": "Gina",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1968,8 +2160,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "elia",
-    "displayName": "Elia Penso",
+    "username": "elia penso",
+    "displayName": "Elia",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -1984,8 +2176,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "sandra",
-    "displayName": "Sandra Penso",
+    "username": "sandra penso",
+    "displayName": "Sandra",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2000,8 +2192,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "lara",
-    "displayName": "Lara Penso",
+    "username": "lara penso",
+    "displayName": "Lara",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2032,8 +2224,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "sara",
-    "displayName": "Sara Zevulun",
+    "username": "sara zevulun",
+    "displayName": "Sara",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2048,8 +2240,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "mila",
-    "displayName": "Mila Zevulun",
+    "username": "mila zevulun",
+    "displayName": "Mila",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2064,8 +2256,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "mia",
-    "displayName": "Mia Abulaf",
+    "username": "mia abulaf",
+    "displayName": "Mia",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2080,8 +2272,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "nedi",
-    "displayName": "Nedi Eskinazi",
+    "username": "nedi eskinazi",
+    "displayName": "Nedi",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2096,8 +2288,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "benjamin",
-    "displayName": "Benjamin Findlay",
+    "username": "benjamin findlay",
+    "displayName": "Benjamin",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2112,8 +2304,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "claire",
-    "displayName": "Claire Findlay",
+    "username": "claire findlay",
+    "displayName": "Claire",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2128,8 +2320,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "nea",
-    "displayName": "Nea Lane",
+    "username": "nea lane",
+    "displayName": "Nea",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2144,8 +2336,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "verda",
-    "displayName": "Verda Abulaf",
+    "username": "verda abulaf",
+    "displayName": "Verda",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2160,8 +2352,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "hannah",
-    "displayName": "Hannah Nadler",
+    "username": "hannah nadler",
+    "displayName": "Hannah",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2176,8 +2368,8 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "aaron",
-    "displayName": "Aaron Nadler",
+    "username": "aaron nadler",
+    "displayName": "Aaron",
     "events": {
       "ceremony": true,
       "familyReception": false,
@@ -2192,8 +2384,88 @@
     "dietaryRequirements": ""
   },
   {
-    "username": "dalya",
-    "displayName": "Dalya Karadag",
+    "username": "dalya karadag",
+    "displayName": "Dalya",
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "ester karadag",
+    "displayName": "",
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "ralf penso",
+    "displayName": "",
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "dilan ozkul",
+    "displayName": "",
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "sera kohen",
+    "displayName": "",
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
+  },
+  {
+    "username": "korel katar",
+    "displayName": "",
     "events": {
       "ceremony": true,
       "familyReception": false,
