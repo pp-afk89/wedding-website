@@ -1,36 +1,5 @@
 // Wedding Website Frontend - JSON Backend Integration
 
-// ============================================
-// SCROLL-REACTIVE NAVIGATION
-// ============================================
-let lastScrollTop = 0;
-const navbar = document.getElementById('navbar');
-const scrollThreshold = 100; // Start hiding after 100px scroll
-
-window.addEventListener('scroll', () => {
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    
-    // Don't hide navbar at the very top
-    if (scrollTop < scrollThreshold) {
-        navbar.classList.remove('nav-hidden');
-        navbar.classList.add('nav-visible');
-        return;
-    }
-    
-    // Scrolling down - hide navbar
-    if (scrollTop > lastScrollTop) {
-        navbar.classList.add('nav-hidden');
-        navbar.classList.remove('nav-visible');
-    } 
-    // Scrolling up - show navbar
-    else {
-        navbar.classList.remove('nav-hidden');
-        navbar.classList.add('nav-visible');
-    }
-    
-    lastScrollTop = scrollTop;
-});
-
 // Event Details
 const eventDetails = {
     ceremony: {
