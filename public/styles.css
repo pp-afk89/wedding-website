@@ -27,25 +27,26 @@ body {
 .login-page {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    padding-top: 10vh;
     justify-content: center;
     background: #f5f3ef;
     position: relative;
     overflow: hidden;
 }
 
-/* Login page background - centered, responsive table graphic (CROPPED, NO TEXT) */
+/* Login page background - crop top, show bottom portion with candles/glasses */
 .login-page::before {
     content: '';
     position: absolute;
-    top: 50%;
+    bottom: 0;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translateX(-50%);
     width: 100%;
-    height: 100%;
+    height: 120%;
     background-image: url('/images/wedding_graphic_watermark.png');
     background-size: cover;
-    background-position: center;
+    background-position: center bottom;
     background-repeat: no-repeat;
     opacity: 1;
     z-index: 0;
@@ -153,9 +154,9 @@ body {
 }
 
 /* ============================================
-   NAVIGATION - CLEAN SOLUTION
-   Desktop: Horizontal bar
-   Mobile: Hamburger menu, hides on scroll down, shows on scroll up
+   NAVIGATION - SIMPLE HORIZONTAL (ALL DEVICES)
+   Desktop: Full size links
+   Mobile: Smaller links, all horizontal
    ============================================ */
 
 #navbar {
@@ -167,22 +168,15 @@ body {
     right: 0;
     z-index: 1000;
     padding: 0;
-    transition: transform 0.3s ease-in-out;
 }
 
-/* Hide navbar when scrolling down (mobile only) */
-#navbar.nav-hidden {
-    transform: translateY(-100%);
-}
-
-/* Desktop Navigation */
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0 20px;
+    padding: 0;
     gap: 0;
 }
 
@@ -204,92 +198,19 @@ body {
     border-bottom-color: rgba(255,255,255,0.5);
 }
 
-/* Hamburger - hidden on desktop */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1001;
-}
-
-.hamburger span {
-    width: 25px;
-    height: 3px;
-    background: white;
-    margin: 3px 0;
-    transition: 0.3s;
-    border-radius: 3px;
-}
-
-/* Hamburger animation when active */
-.hamburger.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
-
-/* ============================================
-   MOBILE NAVIGATION STYLES
-   ============================================ */
-
+/* Mobile - smaller text, still horizontal */
 @media (max-width: 768px) {
-    #navbar {
-        padding: 12px 15px;
-    }
-    
-    /* Show hamburger on mobile */
-    .hamburger {
-        display: flex;
-    }
-    
-    /* Navigation container - dropdown menu */
-    .nav-container {
-        position: fixed;
-        top: 55px;
-        left: 0;
-        right: 0;
-        background: #5a7360;
-        flex-direction: column;
-        padding: 0;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-in-out;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-        align-items: stretch;
-    }
-    
-    /* Show menu when active */
-    .nav-container.active {
-        max-height: 400px;
-    }
-    
-    /* Navigation links in mobile menu */
     .nav-link {
-        padding: 16px 20px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-        text-align: left;
-        font-size: 1rem;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-    }
-    
-    .nav-link:last-child {
-        border-bottom: none;
+        padding: 14px 10px;
+        font-size: 0.75rem;
+        letter-spacing: 0.3px;
     }
 }
 
 @media (max-width: 480px) {
     .nav-link {
-        padding: 14px 18px;
-        font-size: 0.95rem;
+        padding: 12px 8px;
+        font-size: 0.7rem;
     }
 }
 

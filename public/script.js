@@ -162,29 +162,11 @@ function createEventCard(eventType) {
 // NAVIGATION
 // ============================================
 
-// Hamburger menu toggle
-const hamburger = document.getElementById('hamburger');
-const navContainer = document.getElementById('nav-container');
-
-if (hamburger) {
-    hamburger.addEventListener('click', () => {
-        hamburger.classList.toggle('active');
-        navContainer.classList.toggle('active');
-    });
-}
-
-// Navigation links - smooth scroll and close menu
+// Navigation links - smooth scroll
 document.querySelectorAll('.nav-link').forEach(link => {
     link.addEventListener('click', function(e) {
         e.preventDefault();
         
-        // Close mobile menu
-        if (hamburger) {
-            hamburger.classList.remove('active');
-            navContainer.classList.remove('active');
-        }
-        
-        // Smooth scroll to section
         const targetId = this.getAttribute('href');
         const targetSection = document.querySelector(targetId);
         
@@ -198,40 +180,6 @@ document.querySelectorAll('.nav-link').forEach(link => {
             });
         }
     });
-});
-
-// Hide/show navbar on scroll (mobile only)
-let lastScrollTop = 0;
-const navbar = document.getElementById('navbar');
-const scrollThreshold = 100;
-
-window.addEventListener('scroll', () => {
-    // Only apply scroll behavior on mobile
-    if (window.innerWidth <= 768) {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        
-        // Don't hide at very top
-        if (scrollTop < scrollThreshold) {
-            navbar.classList.remove('nav-hidden');
-            return;
-        }
-        
-        // Scrolling down - hide
-        if (scrollTop > lastScrollTop) {
-            navbar.classList.add('nav-hidden');
-            // Close menu if open
-            if (hamburger) {
-                hamburger.classList.remove('active');
-                navContainer.classList.remove('active');
-            }
-        } 
-        // Scrolling up - show
-        else {
-            navbar.classList.remove('nav-hidden');
-        }
-        
-        lastScrollTop = scrollTop;
-    }
 });
 
 // ============================================
