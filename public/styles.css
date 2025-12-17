@@ -153,8 +153,9 @@ body {
 }
 
 /* ============================================
-   NAVIGATION - MODERN SCROLL-REACTIVE
-   Hides on scroll down, shows on scroll up
+   NAVIGATION - CLEAN SOLUTION
+   Desktop: Horizontal bar
+   Mobile: Hamburger menu, hides on scroll down, shows on scroll up
    ============================================ */
 
 #navbar {
@@ -169,16 +170,12 @@ body {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Hide navbar when scrolling down */
+/* Hide navbar when scrolling down (mobile only) */
 #navbar.nav-hidden {
     transform: translateY(-100%);
 }
 
-/* Show navbar when scrolling up */
-#navbar.nav-visible {
-    transform: translateY(0);
-}
-
+/* Desktop Navigation */
 .nav-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -207,18 +204,92 @@ body {
     border-bottom-color: rgba(255,255,255,0.5);
 }
 
-/* Mobile adjustments */
+/* Hamburger - hidden on desktop */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 3px 0;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+/* Hamburger animation when active */
+.hamburger.active span:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* ============================================
+   MOBILE NAVIGATION STYLES
+   ============================================ */
+
 @media (max-width: 768px) {
+    #navbar {
+        padding: 12px 15px;
+    }
+    
+    /* Show hamburger on mobile */
+    .hamburger {
+        display: flex;
+    }
+    
+    /* Navigation container - dropdown menu */
+    .nav-container {
+        position: fixed;
+        top: 55px;
+        left: 0;
+        right: 0;
+        background: #5a7360;
+        flex-direction: column;
+        padding: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        align-items: stretch;
+    }
+    
+    /* Show menu when active */
+    .nav-container.active {
+        max-height: 400px;
+    }
+    
+    /* Navigation links in mobile menu */
     .nav-link {
-        padding: 16px 12px;
-        font-size: 0.85rem;
+        padding: 16px 20px;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+        text-align: left;
+        font-size: 1rem;
+        border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    
+    .nav-link:last-child {
+        border-bottom: none;
     }
 }
 
 @media (max-width: 480px) {
     .nav-link {
-        padding: 14px 8px;
-        font-size: 0.8rem;
+        padding: 14px 18px;
+        font-size: 0.95rem;
     }
 }
 
@@ -638,6 +709,7 @@ body {
     border-radius: 8px;
     border: 3px solid #5a7360;
     box-shadow: 0 4px 15px rgba(90, 115, 96, 0.2);
+    text-align: center;
 }
 
 .payment-card h3 {
@@ -647,7 +719,7 @@ body {
     font-weight: 400;
 }
 
-.monzo-link {
+.payment-btn {
     display: inline-block;
     padding: 16px 40px;
     background: #5a7360;
@@ -657,14 +729,22 @@ body {
     font-size: 1.1rem;
     transition: background 0.3s;
     font-weight: 500;
-    min-height: 50px; /* Mobile tap target */
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
-.monzo-link:hover {
+.payment-btn:hover {
     background: #4a6350;
+}
+
+.payment-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
 }
 
 .gift-message {
@@ -974,37 +1054,6 @@ body {
 /* ============================================
    V7 NEW FEATURES
    ============================================ */
-
-/* Hamburger Menu Button */
-.hamburger {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    z-index: 1001;
-}
-
-.hamburger span {
-    display: block;
-    width: 25px;
-    height: 3px;
-    background-color: white;
-    margin: 5px 0;
-    transition: 0.3s;
-}
-
-.hamburger.active span:nth-child(1) {
-    transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.hamburger.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger.active span:nth-child(3) {
-    transform: rotate(45deg) translate(-5px, -6px);
-}
 
 /* ============================================
    GALLERY CAROUSEL - COMPACT & PROFESSIONAL
@@ -1335,51 +1384,6 @@ body {
 
 /* Mobile Responsive Updates */
 @media (max-width: 768px) {
-    /* Navbar becomes relative container */
-    #navbar {
-        position: relative;
-        padding: 15px 60px 15px 20px; /* Extra padding for hamburger */
-    }
-    
-    /* Show hamburger, positioned in navbar */
-    .hamburger {
-        display: block;
-        position: absolute;
-        right: 20px;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    
-    .nav-container {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background-color: rgba(90, 115, 96, 0.98);
-        flex-direction: column;
-        max-height: 0;
-        overflow: hidden;
-        transition: max-height 0.3s ease-out;
-        z-index: 1000;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-    
-    .nav-container.active {
-        max-height: 500px;
-    }
-    
-    .nav-container .nav-link {
-        width: 100%;
-        text-align: center;
-        padding: 15px;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
-        color: white;
-    }
-    
-    .nav-container .nav-link:hover {
-        background-color: rgba(90, 115, 96, 0.9);
-    }
-    
     /* Carousel mobile adjustments */
     .carousel-btn {
         padding: 10px 15px;
