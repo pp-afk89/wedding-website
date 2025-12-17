@@ -638,6 +638,7 @@ body {
     border-radius: 8px;
     border: 3px solid #5a7360;
     box-shadow: 0 4px 15px rgba(90, 115, 96, 0.2);
+    text-align: center;
 }
 
 .payment-card h3 {
@@ -647,7 +648,7 @@ body {
     font-weight: 400;
 }
 
-.monzo-link {
+.payment-btn {
     display: inline-block;
     padding: 16px 40px;
     background: #5a7360;
@@ -657,14 +658,22 @@ body {
     font-size: 1.1rem;
     transition: background 0.3s;
     font-weight: 500;
-    min-height: 50px; /* Mobile tap target */
+    min-height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: 0 auto;
 }
 
-.monzo-link:hover {
+.payment-btn:hover {
     background: #4a6350;
+}
+
+.payment-note {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
 }
 
 .gift-message {
