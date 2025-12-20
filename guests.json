@@ -616,7 +616,7 @@
   },
   {
     "username": "Vica Marcucci",
-    "displayName": "=LEFT(A84,FIND(\" \",A84) - 1)",
+    "displayName": "Vica",
     "events": [
       "ceremony",
       "familyReception",
@@ -625,7 +625,7 @@
   },
   {
     "username": "Tayla Montague",
-    "displayName": "=LEFT(A85,FIND(\" \",A85) - 1)",
+    "displayName": "Tayla",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -633,7 +633,7 @@
   },
   {
     "username": "Charlie Cook",
-    "displayName": "=LEFT(A86,FIND(\" \",A86) - 1)",
+    "displayName": "Charlie",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -641,7 +641,7 @@
   },
   {
     "username": "Athene Aristocleous",
-    "displayName": "=LEFT(A87,FIND(\" \",A87) - 1)",
+    "displayName": "Athene",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -649,7 +649,7 @@
   },
   {
     "username": "Hannah Michael",
-    "displayName": "=LEFT(A88,FIND(\" \",A88) - 1)",
+    "displayName": "Hannah",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -657,7 +657,7 @@
   },
   {
     "username": "Birsu Kucukdeveci",
-    "displayName": "=LEFT(A89,FIND(\" \",A89) - 1)",
+    "displayName": "Birsu",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -665,7 +665,7 @@
   },
   {
     "username": "Eda Gurdamar",
-    "displayName": "=LEFT(A90,FIND(\" \",A90) - 1)",
+    "displayName": "Eda",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -673,7 +673,7 @@
   },
   {
     "username": "Doruk Kurt",
-    "displayName": "=LEFT(A91,FIND(\" \",A91) - 1)",
+    "displayName": "Doruk",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -681,7 +681,7 @@
   },
   {
     "username": "Ceylan Inan",
-    "displayName": "=LEFT(A92,FIND(\" \",A92) - 1)",
+    "displayName": "Ceylan",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -689,7 +689,7 @@
   },
   {
     "username": "Lewis O'Neill",
-    "displayName": "=LEFT(A93,FIND(\" \",A93) - 1)",
+    "displayName": "Lewis",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -697,7 +697,7 @@
   },
   {
     "username": "Alara Erisen",
-    "displayName": "=LEFT(A94,FIND(\" \",A94) - 1)",
+    "displayName": "Alara",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -705,7 +705,7 @@
   },
   {
     "username": "Sami Aroyo",
-    "displayName": "=LEFT(A95,FIND(\" \",A95) - 1)",
+    "displayName": "Sami",
     "events": [
       "ceremony",
       "familyReception"
@@ -713,7 +713,7 @@
   },
   {
     "username": "Alp Gulel",
-    "displayName": "=LEFT(A96,FIND(\" \",A96) - 1)",
+    "displayName": "Alp",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -721,7 +721,7 @@
   },
   {
     "username": "Gozde Ertekin",
-    "displayName": "=LEFT(A97,FIND(\" \",A97) - 1)",
+    "displayName": "Gozde",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -729,7 +729,7 @@
   },
   {
     "username": "Violet Aroyo",
-    "displayName": "=LEFT(A98,FIND(\" \",A98) - 1)",
+    "displayName": "Violet",
     "events": [
       "ceremony",
       "familyReception"
@@ -737,7 +737,7 @@
   },
   {
     "username": "Nesim Bahar",
-    "displayName": "=LEFT(A99,FIND(\" \",A99) - 1)",
+    "displayName": "Nesim",
     "events": [
       "ceremony",
       "familyReception"
@@ -745,7 +745,7 @@
   },
   {
     "username": "Lea Bahar",
-    "displayName": "=LEFT(A100,FIND(\" \",A100) - 1)",
+    "displayName": "Lea",
     "events": [
       "ceremony",
       "familyReception"
@@ -753,7 +753,7 @@
   },
   {
     "username": "Ediz Bahar",
-    "displayName": "=LEFT(A101,FIND(\" \",A101) - 1)",
+    "displayName": "Ediz",
     "events": [
       "ceremony",
       "familyReception"
@@ -761,7 +761,7 @@
   },
   {
     "username": "Arzu Bahar",
-    "displayName": "=LEFT(A102,FIND(\" \",A102) - 1)",
+    "displayName": "Arzu",
     "events": [
       "ceremony",
       "familyReception"
@@ -769,7 +769,7 @@
   },
   {
     "username": "Elif Sansoy",
-    "displayName": "=LEFT(A103,FIND(\" \",A103) - 1)",
+    "displayName": "Elif",
     "events": [
       "ceremony",
       "familyReception"
@@ -785,7 +785,7 @@
   },
   {
     "username": "Liana Benbanaste",
-    "displayName": "=LEFT(A105,FIND(\" \",A105) - 1)",
+    "displayName": "Liana",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -793,7 +793,7 @@
   },
   {
     "username": "Vedat Uzdil",
-    "displayName": "=LEFT(A106,FIND(\" \",A106) - 1)",
+    "displayName": "Vedat",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -801,7 +801,7 @@
   },
   {
     "username": "Erica Bridge",
-    "displayName": "=LEFT(A107,FIND(\" \",A107) - 1)",
+    "displayName": "Erica",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -809,7 +809,7 @@
   },
   {
     "username": "Samantha Mellina",
-    "displayName": "=LEFT(A108,FIND(\" \",A108) - 1)",
+    "displayName": "Samantha",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -817,7 +817,7 @@
   },
   {
     "username": "Breighanna Minnema",
-    "displayName": "=LEFT(A109,FIND(\" \",A109) - 1)",
+    "displayName": "Breighanna",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -825,7 +825,7 @@
   },
   {
     "username": "Seda Oznal",
-    "displayName": "=LEFT(A110,FIND(\" \",A110) - 1)",
+    "displayName": "Seda",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -833,7 +833,7 @@
   },
   {
     "username": "Masis Kalatas",
-    "displayName": "=LEFT(A111,FIND(\" \",A111) - 1)",
+    "displayName": "Masis",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -841,7 +841,7 @@
   },
   {
     "username": "Ali Can Altiparmak",
-    "displayName": "=LEFT(A112,FIND(\" \",A112) - 1)",
+    "displayName": "Ali",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -849,7 +849,7 @@
   },
   {
     "username": "Matthew Holloway",
-    "displayName": "=LEFT(A113,FIND(\" \",A113) - 1)",
+    "displayName": "Matthew",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -857,7 +857,7 @@
   },
   {
     "username": "Joel Bebasa",
-    "displayName": "=LEFT(A114,FIND(\" \",A114) - 1)",
+    "displayName": "Joel",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -865,7 +865,7 @@
   },
   {
     "username": "Elliot Ryan",
-    "displayName": "=LEFT(A115,FIND(\" \",A115) - 1)",
+    "displayName": "Elliot",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -873,7 +873,7 @@
   },
   {
     "username": "Morgan Doelp",
-    "displayName": "=LEFT(A116,FIND(\" \",A116) - 1)",
+    "displayName": "Morgan",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -881,7 +881,7 @@
   },
   {
     "username": "Sibel Amuraben",
-    "displayName": "=LEFT(A117,FIND(\" \",A117) - 1)",
+    "displayName": "Sibel",
     "events": [
       "ceremony",
       "familyReception"
@@ -889,7 +889,7 @@
   },
   {
     "username": "Ilker Amuraben",
-    "displayName": "=LEFT(A118,FIND(\" \",A118) - 1)",
+    "displayName": "Ilker",
     "events": [
       "ceremony",
       "familyReception"
@@ -897,7 +897,7 @@
   },
   {
     "username": "Mirey Nadler",
-    "displayName": "=LEFT(A119,FIND(\" \",A119) - 1)",
+    "displayName": "Mirey",
     "events": [
       "ceremony",
       "familyReception"
@@ -905,7 +905,7 @@
   },
   {
     "username": "Serim Franko",
-    "displayName": "=LEFT(A120,FIND(\" \",A120) - 1)",
+    "displayName": "Serim",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -913,7 +913,7 @@
   },
   {
     "username": "Polen Franko",
-    "displayName": "=LEFT(A121,FIND(\" \",A121) - 1)",
+    "displayName": "Polen",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -921,7 +921,7 @@
   },
   {
     "username": "Izak Ancel",
-    "displayName": "=LEFT(A122,FIND(\" \",A122) - 1)",
+    "displayName": "Izak",
     "events": [
       "ceremony",
       "familyReception"
@@ -937,7 +937,7 @@
   },
   {
     "username": "Izzet Ancel",
-    "displayName": "=LEFT(A124,FIND(\" \",A124) - 1)",
+    "displayName": "Izzet",
     "events": [
       "ceremony",
       "familyReception"
@@ -945,7 +945,7 @@
   },
   {
     "username": "Joel Ancel",
-    "displayName": "=LEFT(A125,FIND(\" \",A125) - 1)",
+    "displayName": "Joel",
     "events": [
       "ceremony",
       "familyReception"
@@ -953,7 +953,7 @@
   },
   {
     "username": "Oya Goksahin",
-    "displayName": "=LEFT(A126,FIND(\" \",A126) - 1)",
+    "displayName": "Oya",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -961,7 +961,7 @@
   },
   {
     "username": "Eslin Saporta",
-    "displayName": "=LEFT(A127,FIND(\" \",A127) - 1)",
+    "displayName": "Eslin",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -969,7 +969,7 @@
   },
   {
     "username": "Hayati Abulaf",
-    "displayName": "=LEFT(A128,FIND(\" \",A128) - 1)",
+    "displayName": "Hayati",
     "events": [
       "ceremony",
       "familyReception"
@@ -977,49 +977,49 @@
   },
   {
     "username": "Uzair Ajmi",
-    "displayName": "=LEFT(A129,FIND(\" \",A129) - 1)",
+    "displayName": "Uzair",
     "events": [
       "ceremony"
     ]
   },
   {
     "username": "Montel Young",
-    "displayName": "=LEFT(A130,FIND(\" \",A130) - 1)",
+    "displayName": "Montel",
     "events": [
       "ceremony"
     ]
   },
   {
     "username": "Liam Richardson",
-    "displayName": "=LEFT(A131,FIND(\" \",A131) - 1)",
+    "displayName": "Liam",
     "events": [
       "ceremony"
     ]
   },
   {
     "username": "Daniele Portaluri",
-    "displayName": "=LEFT(A132,FIND(\" \",A132) - 1)",
+    "displayName": "Daniele",
     "events": [
       "ceremony"
     ]
   },
   {
     "username": "David Cummins",
-    "displayName": "=LEFT(A133,FIND(\" \",A133) - 1)",
+    "displayName": "David",
     "events": [
       "ceremony"
     ]
   },
   {
     "username": "Zach Hallet",
-    "displayName": "=LEFT(A134,FIND(\" \",A134) - 1)",
+    "displayName": "Zach",
     "events": [
       "ceremony"
     ]
   },
   {
     "username": "Leon Penso",
-    "displayName": "=LEFT(A135,FIND(\" \",A135) - 1)",
+    "displayName": "Leon",
     "events": [
       "ceremony",
       "familyReception"
@@ -1027,7 +1027,7 @@
   },
   {
     "username": "Tanya Penso",
-    "displayName": "=LEFT(A136,FIND(\" \",A136) - 1)",
+    "displayName": "Tanya",
     "events": [
       "ceremony",
       "familyReception"
@@ -1035,7 +1035,7 @@
   },
   {
     "username": "Gina Penso",
-    "displayName": "=LEFT(A137,FIND(\" \",A137) - 1)",
+    "displayName": "Gina",
     "events": [
       "ceremony",
       "familyReception"
@@ -1043,7 +1043,7 @@
   },
   {
     "username": "Elia Penso",
-    "displayName": "=LEFT(A138,FIND(\" \",A138) - 1)",
+    "displayName": "Elia",
     "events": [
       "ceremony",
       "familyReception"
@@ -1051,7 +1051,7 @@
   },
   {
     "username": "Sandra Penso",
-    "displayName": "=LEFT(A139,FIND(\" \",A139) - 1)",
+    "displayName": "Sandra",
     "events": [
       "ceremony",
       "familyReception"
@@ -1059,7 +1059,7 @@
   },
   {
     "username": "Lara Penso",
-    "displayName": "=LEFT(A140,FIND(\" \",A140) - 1)",
+    "displayName": "Lara",
     "events": [
       "ceremony",
       "familyReception"
@@ -1075,7 +1075,7 @@
   },
   {
     "username": "Sara Zevulun",
-    "displayName": "=LEFT(A142,FIND(\" \",A142) - 1)",
+    "displayName": "Sara",
     "events": [
       "ceremony",
       "familyReception"
@@ -1083,7 +1083,7 @@
   },
   {
     "username": "Mila Zevulun",
-    "displayName": "=LEFT(A143,FIND(\" \",A143) - 1)",
+    "displayName": "Mila",
     "events": [
       "ceremony",
       "familyReception"
@@ -1091,7 +1091,7 @@
   },
   {
     "username": "Mia Abulaf",
-    "displayName": "=LEFT(A144,FIND(\" \",A144) - 1)",
+    "displayName": "Mia",
     "events": [
       "ceremony",
       "familyReception",
@@ -1100,7 +1100,7 @@
   },
   {
     "username": "Nedi Eskinazi",
-    "displayName": "=LEFT(A145,FIND(\" \",A145) - 1)",
+    "displayName": "Nedi",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -1108,21 +1108,21 @@
   },
   {
     "username": "Benjamin Findlay",
-    "displayName": "=LEFT(A146,FIND(\" \",A146) - 1)",
+    "displayName": "Benjamin",
     "events": [
       "ceremony"
     ]
   },
   {
     "username": "Claire Findlay",
-    "displayName": "=LEFT(A147,FIND(\" \",A147) - 1)",
+    "displayName": "Claire",
     "events": [
       "ceremony"
     ]
   },
   {
     "username": "Nea Lane",
-    "displayName": "=LEFT(A148,FIND(\" \",A148) - 1)",
+    "displayName": "Nea",
     "events": [
       "ceremony",
       "weddingCelebration"
@@ -1130,7 +1130,7 @@
   },
   {
     "username": "Verda Abulaf",
-    "displayName": "=LEFT(A149,FIND(\" \",A149) - 1)",
+    "displayName": "Verda",
     "events": [
       "ceremony",
       "familyReception"
@@ -1138,7 +1138,7 @@
   },
   {
     "username": "Hannah Nadler",
-    "displayName": "=LEFT(A150,FIND(\" \",A150) - 1)",
+    "displayName": "Hannah",
     "events": [
       "ceremony",
       "familyReception"
@@ -1146,7 +1146,7 @@
   },
   {
     "username": "Aaron Nadler",
-    "displayName": "=LEFT(A151,FIND(\" \",A151) - 1)",
+    "displayName": "Aaron",
     "events": [
       "ceremony",
       "familyReception"
@@ -1154,7 +1154,7 @@
   },
   {
     "username": "Dalya Karadag",
-    "displayName": "=LEFT(A152,FIND(\" \",A152) - 1)",
+    "displayName": "Dalya",
     "events": [
       "ceremony",
       "familyReception"
