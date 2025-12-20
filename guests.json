@@ -2,1331 +2,2753 @@
   {
     "username": "Maggie Purdy",
     "displayName": "Mum and Dad",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Mike Purdy",
     "displayName": "Mum and Dad",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Nick Purdy",
     "displayName": "Nick, Sarah, Hannah and Holly",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sarah Purdy",
     "displayName": "Nick, Sarah, Hannah and Holly",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lisa Smith",
     "displayName": "Lisa and Dave",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "David Penman",
     "displayName": "Lisa and Dave",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Josie Smith-Bizicki",
     "displayName": "Josie and Reece",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Reece Bellingham",
     "displayName": "Josie and Reece",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Zoe Smith-Bizicki",
     "displayName": "Zoe",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Peter Purdy",
     "displayName": "Peter and Lisa",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lisa Havard",
     "displayName": "Peter and Lisa",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Jane Mills",
     "displayName": "Jane and Mike",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Mike Mills",
     "displayName": "Jane and Mike",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Kamla Lloyd",
     "displayName": "Kamla",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Jane Greetham",
     "displayName": "Jane and Robin",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Robin Greetham",
     "displayName": "Jane and Robin",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Jean Saul",
     "displayName": "Jean and Martin",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Martin Saul",
     "displayName": "Jean and Martin",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Gil Whyman",
     "displayName": "Gil and Jane",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Jane Whyman",
     "displayName": "Gil and Jane",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sasan Aghlani",
     "displayName": "Sasan, Sophie, Mara and Layla",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sophie Aghlani",
     "displayName": "Sasan, Sophie, Mara and Layla",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Alex Bibic",
     "displayName": "Alex, Em, Isla and Marli",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Emily Dyson",
     "displayName": "Alex, Em, Isla and Marli",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Dimal Luta",
     "displayName": "Dimal, Sam and Edris",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sam Conkling",
     "displayName": "Dimal, Sam and Edris",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Rhys Lloyd",
     "displayName": "Rhys and Lizzie",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lizzie",
     "displayName": "Rhys and Lizzie",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Kathryn Shepping",
     "displayName": "Kathryn, Luke and Rafi",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Luke",
     "displayName": "Kathryn, Luke and Rafi",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Alfredo Lopez Nieves",
     "displayName": "Alfredo, Isa and Nerea",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Isa",
     "displayName": "Alfredo, Isa and Nerea",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "John Sprunt",
     "displayName": "John and Steff",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Steff Tschirky",
     "displayName": "John and Steff",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Matt Beard",
     "displayName": "Matt and Amy",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Amy",
     "displayName": "Matt and Amy",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Edward Latham",
     "displayName": "Ed, Bekka and Isla",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Becka Latham",
     "displayName": "Ed, Bekka and Isla",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Alex Li",
     "displayName": "Alex, Katie, Penny and Sadie",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Katie Smith",
     "displayName": "Alex, Katie, Penny and Sadie",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Josh Burke",
     "displayName": "Josh, Izzy and Casper",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Izzy Wilson",
     "displayName": "Josh, Izzy and Casper",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Ed Paginton",
     "displayName": "Ed",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Tom Bowens",
     "displayName": "Tom, Amanda and Moa",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Amanda",
     "displayName": "Amanda",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Richard Hoggart",
     "displayName": "Richard",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Tim Black",
     "displayName": "Tim and Kat",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Kat",
     "displayName": "Kat",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sean Nichols",
     "displayName": "Sean",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Jack Dahlsen",
     "displayName": "Jack",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Claudia Lazarus",
     "displayName": "Claudia, Sam, Romy and Pussycat",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sam Giles",
     "displayName": "Claudia, Sam, Romy and Pussycat",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Cassy Locke",
     "displayName": "Cassy, Sam, Willa and Ebba",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sam Collins",
     "displayName": "Cassy, Sam, Willa and Ebba",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Moises Blanco",
     "displayName": "Moises and Lisa",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lisa",
     "displayName": "Moises and Lisa",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Grace Mcdonagh",
     "displayName": "Grace",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Estefanie Liehr",
     "displayName": "Steff",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Brodie Wyatt",
     "displayName": "Brodie",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Patrick Bolton",
     "displayName": "Paddy",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Roisin Kenny",
     "displayName": "Roisin",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Emily Baker",
     "displayName": "Emily",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Laurence Coombe",
     "displayName": "Laurence",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Charlotte Garfield",
     "displayName": "Charlotte",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Vishnu Sakthivel",
     "displayName": "Vish and Flo",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Florence Ackland",
     "displayName": "Vish and Flo",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Shan Mandora",
     "displayName": "Shan",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Alex Edmiston",
     "displayName": "Alex",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Fred Paginton",
     "displayName": "Fred",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Philip",
     "displayName": "Philip",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Claire Paginton",
     "displayName": "Claire Paginton",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lorel Scriven",
     "displayName": "Lorel Scriven",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Clare Mullins",
     "displayName": "Clare Mullins",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Josh Myatt",
     "displayName": "Josh Myatt",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Aaron Payne",
     "displayName": "Aaron Payne",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Patrick Walsh",
     "displayName": "Patrick Walsh",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Rafa",
     "displayName": "Rafa",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Armand",
     "displayName": "Armand",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Said",
     "displayName": "Said",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Philip",
     "displayName": "Philip",
-    "events": []
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "David Penso",
     "displayName": "David",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Vica Marcucci",
     "displayName": "Vica",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Tayla Montague",
     "displayName": "Tayla",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Charlie Cook",
     "displayName": "Charlie",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Athene Aristocleous",
     "displayName": "Athene",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Hannah Michael",
     "displayName": "Hannah",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Birsu Kucukdeveci",
     "displayName": "Birsu",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Eda Gurdamar",
     "displayName": "Eda",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Doruk Kurt",
     "displayName": "Doruk",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Ceylan Inan",
     "displayName": "Ceylan",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lewis O'Neill",
     "displayName": "Lewis",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Alara Erisen",
     "displayName": "Alara",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sami Aroyo",
     "displayName": "Sami",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Alp Gulel",
     "displayName": "Alp",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Gozde Ertekin",
     "displayName": "Gozde",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Violet Aroyo",
     "displayName": "Violet",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Nesim Bahar",
     "displayName": "Nesim",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lea Bahar",
     "displayName": "Lea",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Ediz Bahar",
     "displayName": "Ediz",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Arzu Bahar",
     "displayName": "Arzu",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Elif Sansoy",
     "displayName": "Elif",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Yigit Kayabasi",
     "displayName": "Yigit",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Liana Benbanaste",
     "displayName": "Liana",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Vedat Uzdil",
     "displayName": "Vedat",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Erica Bridge",
     "displayName": "Erica",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Samantha Mellina",
     "displayName": "Samantha",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Breighanna Minnema",
     "displayName": "Breighanna",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Seda Oznal",
     "displayName": "Seda",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Masis Kalatas",
     "displayName": "Masis",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Ali Can Altiparmak",
     "displayName": "Ali",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Matthew Holloway",
     "displayName": "Matthew",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Joel Bebasa",
     "displayName": "Joel",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Elliot Ryan",
     "displayName": "Elliot",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Morgan Doelp",
     "displayName": "Morgan",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sibel Amuraben",
     "displayName": "Sibel",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Ilker Amuraben",
     "displayName": "Ilker",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Mirey Nadler",
     "displayName": "Mirey",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Serim Franko",
     "displayName": "Serim",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Polen Franko",
     "displayName": "Polen",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Izak Ancel",
     "displayName": "Izak",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Dafna",
     "displayName": "Dafna",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Izzet Ancel",
     "displayName": "Izzet",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Joel Ancel",
     "displayName": "Joel",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Oya Goksahin",
     "displayName": "Oya",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Eslin Saporta",
     "displayName": "Eslin",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Hayati Abulaf",
     "displayName": "Hayati",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Uzair Ajmi",
     "displayName": "Uzair",
-    "events": [
-      "ceremony"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Montel Young",
     "displayName": "Montel",
-    "events": [
-      "ceremony"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Liam Richardson",
     "displayName": "Liam",
-    "events": [
-      "ceremony"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Daniele Portaluri",
     "displayName": "Daniele",
-    "events": [
-      "ceremony"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "David Cummins",
     "displayName": "David",
-    "events": [
-      "ceremony"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Zach Hallet",
     "displayName": "Zach",
-    "events": [
-      "ceremony"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Leon Penso",
     "displayName": "Leon",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Tanya Penso",
     "displayName": "Tanya",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Gina Penso",
     "displayName": "Gina",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Elia Penso",
     "displayName": "Elia",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sandra Penso",
     "displayName": "Sandra",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lara Penso",
     "displayName": "Lara",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Josh",
     "displayName": "Josh",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sara Zevulun",
     "displayName": "Sara",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Mila Zevulun",
     "displayName": "Mila",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Mia Abulaf",
     "displayName": "Mia",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Nedi Eskinazi",
     "displayName": "Nedi",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Benjamin Findlay",
     "displayName": "Benjamin",
-    "events": [
-      "ceremony"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Claire Findlay",
     "displayName": "Claire",
-    "events": [
-      "ceremony"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Nea Lane",
     "displayName": "Nea",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Verda Abulaf",
     "displayName": "Verda",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Hannah Nadler",
     "displayName": "Hannah",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Aaron Nadler",
     "displayName": "Aaron",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Dalya Karadag",
     "displayName": "Dalya",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Ester Karadag",
     "displayName": "Ester Karadag",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Ralf Penso",
     "displayName": "Ralf Penso",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Dilan Ozkul",
     "displayName": "Dilan Ozkul",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Sera Kohen",
     "displayName": "Sera Kohen",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Korel Katar",
     "displayName": "Korel Katar",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Inga Hoffman",
     "displayName": "Inga Hoffman",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Max Brauninger",
     "displayName": "Max Brauninger",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Defne Sokmen",
     "displayName": "Defne Sokmen",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Deniz Oguz",
     "displayName": "Deniz Oguz",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Harriet King",
     "displayName": "Harriet King",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Rupert Duthy",
     "displayName": "Rupert Duthy",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Jamie Britton",
     "displayName": "Jamie Britton",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Gabriela Cropper",
     "displayName": "Gabriela Cropper",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Olivia Benbanaste",
     "displayName": "Olivia Benbanaste",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Giles",
     "displayName": "Giles",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Ece Soysal",
     "displayName": "Ece Soysal",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Anya Marikatova",
     "displayName": "Anya Marikatova",
-    "events": [
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": false,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Lora Penso",
     "displayName": "Tant Lora",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Seth Nadler",
     "displayName": "Seth Nadler",
-    "events": [
-      "ceremony",
-      "familyReception"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": false
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Rakel Aroyo",
     "displayName": "Rakel Aroyo",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Piers Purdy",
     "displayName": "Piers Purdy",
-    "events": [
-      "ceremony",
-      "familyReception",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": true,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   },
   {
     "username": "Doruk Akpek",
     "displayName": "Doruk Akpek",
-    "events": [
-      "ceremony",
-      "weddingCelebration"
-    ]
+    "events": {
+      "ceremony": true,
+      "familyReception": false,
+      "weddingCelebration": true
+    },
+    "rsvp": {
+      "ceremony": null,
+      "familyReception": null,
+      "weddingCelebration": null
+    },
+    "giftSelection": null,
+    "dietaryRequirements": ""
   }
 ]
