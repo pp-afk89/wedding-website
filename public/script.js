@@ -225,7 +225,7 @@ async function selectGift(giftType) {
     }, 100);
     
     const giftMessage = document.getElementById('gift-message');
-    giftMessage.textContent = 'Thank you for your generosity!';
+    giftMessage.textContent = 'Thank-you so much for your gift. We promise to send photos!';
     giftMessage.style.display = 'block';
 }
 
@@ -327,7 +327,8 @@ function updateCarousel() {
     const track = document.getElementById('carousel-track');
     const counter = document.getElementById('carousel-counter');
     
-    const offset = -currentPhotoIndex * 100;
+    // Calculate offset as percentage of track width (track is totalPhotos × 100% wide)
+    const offset = -(currentPhotoIndex * 100) / totalPhotos;
     track.style.transform = `translateX(${offset}%)`;
     counter.textContent = `${currentPhotoIndex + 1} / ${totalPhotos}`;
 }

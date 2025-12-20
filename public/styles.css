@@ -636,6 +636,43 @@ body {
     font-weight: 400;
 }
 
+.monzo-link {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #5a7360;
+    color: #faf8f5;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    transition: background 0.3s;
+    font-weight: 500;
+    margin-bottom: 25px;
+}
+
+.monzo-link:hover {
+    background: #4a6350;
+}
+
+.bank-details {
+    text-align: left;
+    background: rgba(232, 240, 234, 0.5);
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.bank-details p {
+    margin: 8px 0;
+    font-size: 0.95rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.bank-details strong {
+    color: #5a7360;
+    font-weight: 600;
+}
+
 .payment-btn {
     display: inline-block;
     padding: 16px 40px;
@@ -670,7 +707,8 @@ body {
     background: rgba(232, 240, 234, 0.95);
     border-radius: 4px;
     color: #5a7360;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: 700;
 }
 
 /* ============================================
