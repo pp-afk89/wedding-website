@@ -326,16 +326,23 @@ function changeSlide(direction) {
 function updateCarousel() {
     const track = document.getElementById('carousel-track');
     const counter = document.getElementById('carousel-counter');
+    const carousel = track.parentElement;
     
-    // Calculate offset as percentage of track width (track is totalPhotos × 100% wide)
-    const offset = -(currentPhotoIndex * 100) / totalPhotos;
-    track.style.transform = `translateX(${offset}%)`;
+    // Calculate pixel-based offset for reliable positioning
+    const slideWidth = carousel.offsetWidth;
+    const offset = -currentPhotoIndex * slideWidth;
+    track.style.transform = `translateX(${offset}px)`;
     counter.textContent = `${currentPhotoIndex + 1} / ${totalPhotos}`;
 }
 
 // Initialize carousel when page loads
 if (document.getElementById('carousel-track')) {
     initCarousel();
+    
+    // Update carousel position on window resize
+    window.addEventListener('resize', () => {
+        updateCarousel();
+    });
 }
 
 // ============================================
